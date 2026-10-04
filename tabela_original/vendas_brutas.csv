@@ -1,0 +1,501 @@
+﻿id_pedido,data_venda,id_cliente,id_produto,nome_produto,categoria,regiao,estado,quantidade,preco_unitario,custo_unitario,desconto_pct,canal_venda,criado_em
+PED-00001,2026-07-01,CLI-0051,PROD-015,Suporte para computador portátil,Acessórios,Norte,AP,2,99.90,48.00,0.15,Loja Física,2026-07-01T13:48:05-04:00
+PED-00002,2026-07-01,CLI-0082,PROD-010,Câmera de vídeo para computador,Eletrônicos,Norte,AC,1,159.90,90.00,0.10,Loja Física,2026-07-01T19:12:46-04:00
+PED-00003,2026-07-01,CLI-0141,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,BA,4,39.90,15.00,0.08,Loja Online,2026-07-01T21:31:15-04:00
+PED-00004,2026-07-01,CLI-0042,PROD-003,Placa-mãe,Hardware,Norte,AC,2,649.90,460.00,0.00,Loja Online,2026-07-01T22:26:27-04:00
+PED-00005,2026-07-02,CLI-0145,PROD-008,Roteador sem fio,Eletrônicos,Centro-Oeste,MS,3,249.90,155.00,0.08,Loja Online,2026-07-02T09:49:53-04:00
+PED-00006,2026-07-02,CLI-0047,PROD-012,Teclado com fio,Acessórios,Centro-Oeste,GO,5,89.90,45.00,0.08,Loja Online,2026-07-02T12:27:35-04:00
+PED-00007,2026-07-02,CLI-0013,PROD-008,Roteador sem fio,Eletrônicos,Norte,AM,1,249.90,155.00,0.05,Loja Física,2026-07-02T13:13:04-04:00
+PED-00008,2026-07-02,CLI-0111,PROD-007,Impressora multifuncional,Eletrônicos,Sudeste,MG,1,1099.90,790.00,0.00,Loja Física,2026-07-02T16:40:58-04:00
+PED-00009,2026-07-02,CLI-0090,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,AL,3,129.90,65.00,0.08,Loja Online,2026-07-02T17:04:45-04:00
+PED-00010,2026-07-02,CLI-0107,PROD-010,Câmera de vídeo para computador,Eletrônicos,Sudeste,SP,1,159.90,90.00,0.00,Loja Online,2026-07-02T19:20:53-04:00
+PED-00011,2026-07-03,CLI-0117,PROD-007,Impressora multifuncional,Eletrônicos,Sudeste,SP,3,1099.90,790.00,0.08,Loja Online,2026-07-03T10:03:00-04:00
+PED-00012,2026-07-03,CLI-0041,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Nordeste,PI,3,399.90,260.00,0.08,Loja Física,2026-07-03T12:24:34-04:00
+PED-00013,2026-07-03,CLI-0060,PROD-004,Memória RAM de 16 GB,Hardware,Nordeste,AL,1,279.90,,0.00,Loja Física,2026-07-03T16:03:57-04:00
+PED-00014,2026-07-03,CLI-0055,PROD-001,Processador de seis núcleos,Hardware,Sudeste,MG,2,899.90,650.00,0.15,Loja Física,2026-07-03T16:14:00-04:00
+PED-00015,2026-07-03,CLI-0122,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,RN,2,1899.90,1450.00,0.05,Loja Física,2026-07-03T18:20:39-04:00
+PED-00016,2026-07-03,CLI-0060,PROD-004,Memória RAM de 16 GB,Hardware,Nordeste,AL,2,279.90,180.00,0.12,Loja Física,2026-07-03T19:28:23-04:00
+PED-00017,2026-07-03,CLI-0115,PROD-010,Câmera de vídeo para computador,Eletrônicos,Centro-Oeste,MT,2,159.90,90.00,0.00,Loja Física,2026-07-03T19:43:10-04:00
+PED-00018,2026-07-04,CLI-0066,PROD-013,Fone de ouvido com microfone,Acessórios,Norte,AM,2,129.90,65.00,0.15,Loja Online,2026-07-04T06:38:56-04:00
+PED-00019,2026-07-04,CLI-0034,PROD-006,Monitor de 24 polegadas,Eletrônicos,Norte,AM,1,799.90,570.00,0.10,Loja Online,2026-07-04T16:56:23-04:00
+PED-00020,2026-07-04,CLI-0007,PROD-006,Monitor de 24 polegadas,Eletrônicos,,PI,2,799.90,570.00,0.05,Loja Online,2026-07-04T22:55:29-04:00
+PED-00021,2026-07-05,CLI-0134,PROD-007,Impressora multifuncional,Eletrônicos,Sudeste,MG,2,1099.90,790.00,0.08,Loja Online,2026-07-05T11:07:11-04:00
+PED-00022,2026-07-05,CLI-0076,PROD-006,Monitor de 24 polegadas,Eletrônicos,Nordeste,CE,1,799.90,570.00,0.10,Loja Física,2026-07-05T13:02:14-04:00
+PED-00023,2026-07-05,CLI-0107,PROD-004,Memória RAM de 16 GB,Hardware,Sudeste,SP,1,279.90,180.00,0.05,Loja Online,2026-07-05T22:23:59-04:00
+PED-00024,2026-07-06,CLI-0113,PROD-009,Caixa de som portátil,Eletrônicos,Norte,RO,1,179.90,105.00,0.03,Loja Online,2026-07-06T00:46:54-04:00
+PED-00025,2026-07-06,CLI-0067,PROD-010,Câmera de vídeo para computador,Eletrônicos,Nordeste,PI,1,159.90,90.00,0.05,Loja Online,2026-07-06T23:21:28-04:00
+PED-00026,2026-07-07,CLI-0010,PROD-013,Fone de ouvido com microfone,Acessórios,Centro-Oeste,DF,2,129.90,65.00,0.15,Loja Online,2026-07-07T02:50:23-04:00
+PED-00027,2026-07-07,CLI-0066,PROD-010,Câmera de vídeo para computador,Eletrônicos,Norte,AM,1,159.90,90.00,0.00,Loja Física,2026-07-07T09:12:20-04:00
+PED-00028,2026-07-07,CLI-0070,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,BA,3,1099.90,790.00,0.08,Loja Online,2026-07-07T12:25:57-04:00
+PED-00029,2026-07-07,CLI-0146,PROD-013,Fone de ouvido com microfone,Acessórios,Norte,RO,1,129.90,65.00,0.00,Loja Física,2026-07-07T13:28:35-04:00
+PED-00030,2026-07-07,CLI-0103,PROD-009,Caixa de som portátil,Eletrônicos,Nordeste,RN,3,179.90,105.00,0.08,Loja Física,2026-07-07T17:15:57-04:00
+PED-00031,2026-07-07,CLI-0057,PROD-008,Roteador sem fio,Eletrônicos,Centro-Oeste,MT,1,249.90,155.00,0.00,Loja Física,2026-07-07T17:30:17-04:00
+PED-00032,2026-07-07,CLI-0017,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Nordeste,PI,1,399.90,260.00,0.10,Loja Física,2026-07-07T18:29:24-04:00
+PED-00033,2026-07-08,CLI-0002,PROD-004,Memória RAM de 16 GB,Hardware,Nordeste,PE,1,279.90,180.00,0.05,Loja Online,2026-07-08T03:31:41-04:00
+PED-00034,2026-07-08,CLI-0107,PROD-009,Caixa de som portátil,Eletrônicos,Sudeste,SP,3,179.90,105.00,0.08,Loja Online,2026-07-08T05:40:28-04:00
+PED-00035,2026-07-08,CLI-0009,PROD-008,Roteador sem fio,Eletrônicos,Sudeste,RJ,2,249.90,155.00,0.05,Loja Online,2026-07-08T10:04:25-04:00
+PED-00036,2026-07-08,CLI-0010,PROD-001,Processador de seis núcleos,Hardware,Centro-Oeste,DF,1,899.90,650.00,0.15,Loja Online,2026-07-08T10:31:29-04:00
+PED-00037,2026-07-08,CLI-0135,PROD-009,Caixa de som portátil,Eletrônicos,Norte,RO,1,179.90,105.00,0.05,Loja Física,2026-07-08T15:05:55-04:00
+PED-00038,2026-07-08,CLI-0140,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,PB,2,1099.90,790.00,0.00,Loja Online,2026-07-08T17:50:56-04:00
+PED-00039,2026-07-08,CLI-0017,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,PI,5,129.90,65.00,0.08,Loja Online,2026-07-08T18:13:35-04:00
+PED-00040,2026-07-09,CLI-0124,PROD-010,Câmera de vídeo para computador,Eletrônicos,Nordeste,BA,2,159.90,90.00,0.10,Loja Online,2026-07-09T01:27:04-04:00
+PED-00041,2026-07-09,CLI-0067,PROD-003,Placa-mãe,Hardware,Nordeste,PI,1,649.90,460.00,0.00,Loja Online,2026-07-09T09:48:50-04:00
+PED-00042,2026-07-09,CLI-0145,PROD-006,Monitor de 24 polegadas,Eletrônicos,Centro-Oeste,MS,1,799.90,570.00,0.15,Loja Física,2026-07-09T13:21:15-04:00
+PED-00043,2026-07-09,CLI-0145,PROD-011,Mouse sem fio,Acessórios,Centro-Oeste,MS,4,79.90,38.00,0.10,Loja Física,2026-07-09T15:00:05-04:00
+PED-00044,2026-07-10,CLI-0004,PROD-011,Mouse sem fio,Acessórios,Nordeste,BA,2,79.90,38.00,0.15,Loja Online,2026-07-10T13:59:38-04:00
+PED-00045,2026-07-10,CLI-0014,PROD-004,Memória RAM de 16 GB,Hardware,Centro-Oeste,GO,2,279.90,180.00,0.00,Loja Online,2026-07-10T17:25:12-04:00
+PED-00046,2026-07-11,CLI-0034,PROD-007,Impressora multifuncional,Eletrônicos,Norte,AM,1,1099.90,790.00,0.00,Loja Online,2026-07-11T07:42:29-04:00
+PED-00047,2026-07-11,CLI-0113,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Norte,RO,2,399.90,260.00,0.05,Loja Online,2026-07-11T12:31:33-04:00
+PED-00048,2026-07-11,CLI-0076,PROD-011,Mouse sem fio,Acessórios,Nordeste,CE,4,79.90,38.00,0.15,Loja Física,2026-07-11T13:26:50-04:00
+PED-00049,2026-07-11,CLI-0029,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,CE,1,39.90,15.00,0.15,Loja Física,2026-07-11T13:34:42-04:00
+PED-00050,2026-07-11,CLI-0084,PROD-010,Câmera de vídeo para computador,Eletrônicos,Nordeste,AL,1,159.90,90.00,0.00,Loja Física,2026-07-11T13:47:33-04:00
+PED-00051,2026-07-11,CLI-0146,PROD-004,Memória RAM de 16 GB,Hardware,Norte,RO,2,279.90,180.00,0.00,Loja Física,2026-07-11T18:48:47-04:00
+PED-00052,2026-07-11,CLI-0017,PROD-001,Processador de seis núcleos,Hardware,Nordeste,PI,2,899.90,650.00,0.00,Loja Online,2026-07-11T18:49:07-04:00
+PED-00053,2026-07-11,CLI-0124,PROD-001,Processador de seis núcleos,Hardware,Nordeste,BA,1,899.90,650.00,0.10,Loja Física,2026-07-11T19:36:42-04:00
+PED-00054,2026-07-11,CLI-0137,PROD-003,Placa-mãe,Hardware,Sudeste,SP,3,649.90,460.00,0.08,Loja Online,2026-07-11T21:43:58-04:00
+PED-00055,2026-07-12,CLI-0110,PROD-004,Memória RAM de 16 GB,Hardware,Nordeste,RN,1,279.90,180.00,0.00,Loja Online,2026-07-12T11:43:45-04:00
+PED-00056,2026-07-12,CLI-0132,PROD-011,Mouse sem fio,Acessórios,Nordeste,AL,1,79.90,38.00,0.00,Loja Online,2026-07-12T12:02:30-04:00
+PED-00057,2026-07-12,CLI-0135,PROD-003,Placa-mãe,Hardware,Norte,RO,1,649.90,460.00,0.00,Loja Física,2026-07-12T14:41:48-04:00
+PED-00058,2026-07-12,CLI-0148,PROD-004,Memória RAM de 16 GB,Hardware,Norte,TO,2,279.90,180.00,0.12,Loja Online,2026-07-12T17:10:54-04:00
+PED-00059,2026-07-12,CLI-0157,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,AL,5,39.90,15.00,-0.05,Loja Física,2026-07-12T17:27:30-04:00
+PED-00060,2026-07-13,CLI-0031,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,MA,1,39.90,15.00,0.05,Loja Online,2026-07-13T07:20:50-04:00
+PED-00061,2026-07-13,CLI-0041,PROD-006,Monitor de 24 polegadas,Eletrônicos,Nordeste,PI,1,799.90,570.00,0.40,Loja Online,2026-07-13T07:35:56-04:00
+PED-00062,2026-07-13,CLI-0040,PROD-008,Roteador sem fio,Eletrônicos,Norte,RO,2,249.90,155.00,0.10,Loja Física,2026-07-13T12:00:18-04:00
+PED-00063,2026-07-13,CLI-0059,PROD-012,Teclado com fio,Acessórios,,RO,2,89.90,45.00,0.15,Loja Online,2026-07-13T14:15:14-04:00
+PED-00064,2026-07-14,CLI-0017,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,PI,3,1099.90,790.00,0.08,Loja Física,2026-07-14T09:27:37-04:00
+PED-00065,2026-07-14,CLI-0029,PROD-011,Mouse sem fio,Acessórios,Nordeste,CE,1,79.90,38.00,0.10,Loja Online,2026-07-14T12:15:39-04:00
+PED-00066,2026-07-14,CLI-0049,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,PI,1,129.90,65.00,0.15,Loja Física,2026-07-14T12:16:58-04:00
+PED-00067,2026-07-14,CLI-0020,PROD-004,Memória RAM de 16 GB,Hardware,Sudeste,ES,1,279.90,180.00,0.05,Loja Física,2026-07-14T14:29:46-04:00
+PED-00068,2026-07-14,CLI-0042,PROD-007,Impressora multifuncional,Eletrônicos,Norte,AC,2,1099.90,790.00,0.00,Loja Física,2026-07-14T16:31:56-04:00
+PED-00069,2026-07-15,CLI-0109,PROD-013,Fone de ouvido com microfone,Acessórios,Centro-Oeste,GO,1,129.90,65.00,0.05,Loja Física,2026-07-15T10:08:09-04:00
+PED-00070,2026-07-15,CLI-0111,PROD-006,Monitor de 24 polegadas,Eletrônicos,Sudeste,MG,1,799.90,570.00,0.40,Loja Online,2026-07-15T10:11:57-04:00
+PED-00071,2026-07-15,CLI-0095,PROD-001,Processador de seis núcleos,Hardware,Sudeste,MG,1,899.90,650.00,0.10,Loja Online,2026-07-15T10:45:28-04:00
+PED-00072,2026-07-15,CLI-0061,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,MA,2,99.90,48.00,0.15,Loja Física,2026-07-15T13:04:57-04:00
+PED-00073,2026-07-15,CLI-0040,PROD-009,Caixa de som portátil,Eletrônicos,Norte,RO,2,179.90,105.00,0.00,Loja Física,2026-07-15T15:44:59-04:00
+PED-00074,2026-07-15,CLI-0122,PROD-003,Placa-mãe,Hardware,Nordeste,RN,1,649.90,460.00,0.05,Loja Online,2026-07-15T22:25:14-04:00
+PED-00075,2026-07-16,CLI-0031,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,MA,1,1899.90,1450.00,0.12,Loja Online,2026-07-16T05:30:45-04:00
+PED-00076,2026-07-16,CLI-0147,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,MA,1,129.90,65.00,0.05,Loja Online,2026-07-16T06:15:16-04:00
+PED-00077,2026-07-16,CLI-0148,PROD-007,Impressora multifuncional,Eletrônicos,Norte,TO,1,1099.90,790.00,0.00,Loja Online,2026-07-16T06:43:14-04:00
+PED-00078,2026-07-16,CLI-0009,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Sudeste,RJ,2,39.90,15.00,0.05,Loja Online,2026-07-16T07:50:13-04:00
+PED-00079,2026-07-16,CLI-0086,PROD-008,Roteador sem fio,Eletrônicos,Sul,RS,3,249.90,155.00,0.08,Loja Física,2026-07-16T11:26:03-04:00
+PED-00080,2026-07-16,CLI-0026,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,SE,1,1899.90,1450.00,0.00,Loja Física,2026-07-16T14:12:29-04:00
+PED-00081,2026-07-16,CLI-0113,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Norte,RO,4,39.90,15.00,0.08,Loja Online,2026-07-16T15:46:16-04:00
+PED-00082,2026-07-16,CLI-0138,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,BA,5,99.90,48.00,0.08,Loja Física,2026-07-16T16:45:50-04:00
+PED-00083,2026-07-16,CLI-0028,PROD-001,Processador de seis núcleos,Hardware,Nordeste,BA,1,899.90,650.00,0.05,Loja Online,2026-07-16T18:06:19-04:00
+PED-00084,2026-07-16,CLI-0077,PROD-006,Monitor de 24 polegadas,Eletrônicos,Centro-Oeste,MT,1,799.90,570.00,0.15,Loja Online,2026-07-16T23:04:59-04:00
+PED-00085,2026-07-17,CLI-0066,PROD-008,Roteador sem fio,Eletrônicos,Norte,AM,2,249.90,155.00,1.20,Loja Online,2026-07-17T01:34:20-04:00
+PED-00086,2026-07-17,CLI-0073,PROD-008,Roteador sem fio,Eletrônicos,Sul,SC,1,249.90,155.00,0.05,Loja Física,2026-07-17T10:19:39-04:00
+PED-00087,2026-07-17,CLI-0124,PROD-011,Mouse sem fio,Acessórios,Nordeste,BA,2,79.90,38.00,0.00,Loja Física,2026-07-17T11:08:04-04:00
+PED-00088,2026-07-18,CLI-0129,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,BA,3,99.90,48.00,0.12,Loja Online,2026-07-18T12:34:44-04:00
+PED-00089,2026-07-18,CLI-0095,PROD-008,Roteador sem fio,Eletrônicos,Sudeste,MG,2,249.90,155.00,0.00,Loja Online,2026-07-18T15:40:37-04:00
+PED-00090,2026-07-18,CLI-0005,PROD-001,Processador de seis núcleos,Hardware,Nordeste,SE,2,899.90,650.00,0.00,Loja Online,2026-07-18T18:39:29-04:00
+PED-00091,2026-07-18,CLI-0154,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,MA,1,1099.90,790.00,0.05,Loja Online,2026-07-18T18:50:16-04:00
+PED-00092,2026-07-18,CLI-0159,PROD-001,Processador de seis núcleos,Hardware,Centro-Oeste,DF,1,899.90,650.00,0.10,Loja Física,2026-07-18T20:05:29-04:00
+PED-00093,2026-07-19,CLI-0048,PROD-008,Roteador sem fio,Eletrônicos,Centro-Oeste,MT,1,249.90,155.00,0.00,Loja Online,2026-07-19T06:30:58-04:00
+PED-00094,2026-07-19,CLI-0104,PROD-015,Suporte para computador portátil,Acessórios,Norte,RO,1,99.90,48.00,0.00,Loja Física,2026-07-19T10:21:52-04:00
+PED-00095,2026-07-19,CLI-0090,PROD-015,Suporte para computador portátil,Acessórios,Sul,AL,2,99.90,48.00,0.40,Loja Online,2026-07-19T11:16:54-04:00
+PED-00096,2026-07-19,CLI-0079,PROD-015,Suporte para computador portátil,Acessórios,Sul,PR,4,99.90,48.00,0.10,Loja Física,2026-07-19T19:02:25-04:00
+PED-00097,2026-07-19,CLI-0008,PROD-011,Mouse sem fio,Acessórios,Centro-Oeste,GO,5,79.90,38.00,0.08,Loja Física,2026-07-19T19:31:59-04:00
+PED-00098,2026-07-20,CLI-0089,PROD-003,Placa-mãe,Hardware,Norte,AP,1,649.90,460.00,0.05,Loja Online,2026-07-20T01:54:27-04:00
+PED-00099,2026-07-20,CLI-0099,PROD-004,Memória RAM de 16 GB,Hardware,Norte,AC,1,279.90,180.00,0.05,Loja Física,2026-07-20T09:28:11-04:00
+PED-00100,2026-07-20,CLI-0019,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Centro-Oeste,MS,2,399.90,260.00,0.00,Loja Online,2026-07-20T13:02:42-04:00
+PED-00101,2026-07-20,CLI-0071,PROD-006,Monitor de 24 polegadas,Eletrônicos,Centro-Oeste,MT,2,799.90,570.00,0.05,Loja Física,2026-07-20T14:38:16-04:00
+PED-00102,2026-07-20,CLI-0055,PROD-013,Fone de ouvido com microfone,Acessórios,Sudeste,MG,1,129.90,65.00,0.15,Loja Física,2026-07-20T16:34:06-04:00
+PED-00103,2026-07-20,CLI-0117,PROD-015,Suporte para computador portátil,Acessórios,Sudeste,SP,1,99.90,48.00,0.03,Loja Online,2026-07-20T16:58:17-04:00
+PED-00104,2026-07-20,CLI-0129,PROD-004,Memória RAM de 16 GB,Hardware,Nordeste,BA,3,279.90,180.00,0.10,Loja Física,2026-07-20T17:59:01-04:00
+PED-00105,2026-07-20,CLI-0010,PROD-001,Processador de seis núcleos,Hardware,Centro-Oeste,DF,3,899.90,650.00,0.08,Loja Online,2026-07-20T18:52:47-04:00
+PED-00106,2026-07-21,CLI-0124,PROD-010,Câmera de vídeo para computador,Eletrônicos,Nordeste,BA,2,159.90,90.00,0.05,Loja Online,2026-07-21T02:28:50-04:00
+PED-00107,2026-07-21,CLI-0060,PROD-012,Teclado com fio,Acessórios,Nordeste,AL,3,89.90,45.00,0.08,Loja Online,2026-07-21T11:24:55-04:00
+PED-00108,2026-07-21,CLI-0078,PROD-007,Impressora multifuncional,Eletrônicos,Norte,AM,2,1099.90,790.00,0.03,Loja Online,2026-07-21T11:53:17-04:00
+PED-00109,2026-07-21,CLI-0124,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,BA,2,39.90,15.00,0.00,Loja Online,2026-07-21T23:14:53-04:00
+PED-00110,2026-07-22,CLI-0078,PROD-006,Monitor de 24 polegadas,Eletrônicos,Norte,AM,2,799.90,570.00,0.10,Loja Online,2026-07-22T08:55:58-04:00
+PED-00111,2026-07-22,CLI-0017,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,PI,2,99.90,48.00,0.40,Loja Física,2026-07-22T09:24:03-04:00
+PED-00112,2026-07-22,CLI-0109,PROD-010,Câmera de vídeo para computador,Eletrônicos,Centro-Oeste,GO,3,159.90,90.00,0.08,Loja Física,2026-07-22T11:41:41-04:00
+PED-00113,2026-07-22,CLI-0068,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,PB,3,1099.90,790.00,0.08,Loja Física,2026-07-22T17:21:50-04:00
+PED-00114,2026-07-22,CLI-0047,PROD-003,Placa-mãe,Hardware,Centro-Oeste,GO,2,649.90,460.00,0.03,Loja Online,2026-07-22T17:29:52-04:00
+PED-00115,2026-07-22,CLI-0101,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,BA,3,39.90,15.00,0.15,Loja Online,2026-07-22T17:56:22-04:00
+PED-00116,2026-07-22,CLI-0068,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,PB,2,129.90,65.00,0.40,Loja Online,2026-07-22T18:19:26-04:00
+PED-00117,2026-07-23,CLI-0100,PROD-004,Memória RAM de 16 GB,Hardware,Nordeste,PE,1,279.90,180.00,0.12,Loja Física,2026-07-23T12:50:17-04:00
+PED-00118,2026-07-23,CLI-0102,PROD-008,Roteador sem fio,Eletrônicos,Sudeste,RJ,3,249.90,155.00,0.12,Loja Online,2026-07-23T12:56:59-04:00
+PED-00119,2026-07-23,CLI-0060,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,AL,1,1099.90,790.00,0.00,Loja Física,2026-07-23T19:54:06-04:00
+PED-00120,2026-07-23,CLI-0149,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,CE,2,39.90,15.00,0.10,Loja Online,2026-07-23T21:39:06-04:00
+PED-00121,2026-07-24,CLI-0020,PROD-003,Placa-mãe,Hardware,Sudeste,ES,1,649.90,460.00,0.03,Loja Física,2026-07-24T17:58:13-04:00
+PED-00122,2026-07-25,CLI-0001,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Nordeste,PB,1,399.90,260.00,0.08,Loja Online,2026-07-25T04:48:12-04:00
+PED-00123,2026-07-25,CLI-0108,PROD-006,Monitor de 24 polegadas,Eletrônicos,Nordeste,PI,3,799.90,570.00,0.10,Loja Física,2026-07-25T12:31:15-04:00
+PED-00124,2026-07-25,CLI-0143,PROD-006,Monitor de 24 polegadas,Eletrônicos,Norte,RR,2,799.90,570.00,0.08,Loja Online,2026-07-25T20:06:04-04:00
+PED-00125,2026-07-25,CLI-0138,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Nordeste,BA,1,399.90,260.00,0.05,Loja Online,2026-07-25T20:50:03-04:00
+PED-00126,2026-07-25,CLI-0072,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,PB,1,1099.90,790.00,0.15,Loja Online,2026-07-25T22:03:49-04:00
+PED-00127,2026-07-25,CLI-0075,PROD-011,Mouse sem fio,Acessórios,Nordeste,PB,5,79.90,38.00,0.08,Loja Online,2026-07-25T22:06:42-04:00
+PED-00128,2026-07-26,CLI-0002,PROD-004,Memória RAM de 16 GB,Hardware,Nordeste,PE,2,279.90,180.00,0.00,Loja Online,2026-07-26T00:15:09-04:00
+PED-00129,2026-07-26,CLI-0120,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,PB,1,129.90,65.00,0.15,Loja Online,2026-07-26T00:59:08-04:00
+PED-00130,2026-07-26,CLI-0067,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,PI,1,1899.90,1450.00,0.05,Loja Online,2026-07-26T01:09:55-04:00
+PED-00131,2026-07-26,CLI-0041,PROD-002,Placa de vídeo de 8 GB,Hardware,,PI,1,1899.90,1450.00,0.12,Loja Online,2026-07-26T13:53:53-04:00
+PED-00132,2026-07-26,CLI-0092,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Norte,AP,2,399.90,260.00,0.05,Loja Física,2026-07-26T17:02:05-04:00
+PED-00133,2026-07-26,CLI-0093,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,SE,1,99.90,48.00,0.05,Loja Física,2026-07-26T17:51:33-04:00
+PED-00134,2026-07-27,CLI-0059,PROD-011,Mouse sem fio,Acessórios,Norte,RO,5,79.90,38.00,0.15,Loja Online,2026-07-27T07:12:41-04:00
+PED-00135,2026-07-27,CLI-0157,PROD-012,Teclado com fio,Acessórios,Nordeste,AL,1,89.90,45.00,0.00,Loja Física,2026-07-27T09:19:08-04:00
+PED-00136,2026-07-27,CLI-0113,PROD-007,Impressora multifuncional,Eletrônicos,Norte,RO,1,1099.90,790.00,0.12,Loja Online,2026-07-27T15:47:06-04:00
+PED-00137,2026-07-27,CLI-0085,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,SE,2,39.90,15.00,0.00,Loja Física,2026-07-27T18:29:53-04:00
+PED-00138,2026-07-27,CLI-0012,PROD-006,Monitor de 24 polegadas,Eletrônicos,Nordeste,PE,,799.90,570.00,0.12,Loja Física,2026-07-27T18:48:27-04:00
+PED-00139,2026-07-28,CLI-0029,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,CE,2,39.90,15.00,0.05,Loja Online,2026-07-28T00:39:29-04:00
+PED-00140,2026-07-28,CLI-0096,PROD-015,Suporte para computador portátil,Acessórios,Sudeste,SP,4,99.90,48.00,0.10,Loja Online,2026-07-28T05:17:10-04:00
+PED-00141,2026-07-28,CLI-0151,PROD-008,Roteador sem fio,Eletrônicos,Centro-Oeste,MT,1,249.90,155.00,0.00,Loja Online,2026-07-28T05:38:21-04:00
+PED-00142,2026-07-28,CLI-0155,PROD-011,Mouse sem fio,Acessórios,Norte,PA,2,79.90,38.00,0.03,Loja Online,2026-07-28T06:28:26-04:00
+PED-00143,2026-07-29,CLI-0039,PROD-013,Fone de ouvido com microfone,Acessórios,Norte,TO,2,129.90,65.00,0.05,Loja Online,2026-07-29T00:59:22-04:00
+PED-00144,2026-07-29,CLI-0110,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,RN,5,99.90,48.00,0.40,Loja Online,2026-07-29T03:32:25-04:00
+PED-00145,2026-07-29,CLI-0097,PROD-009,Caixa de som portátil,Eletrônicos,Nordeste,PE,1,179.90,105.00,0.03,Loja Online,2026-07-29T04:51:22-04:00
+PED-00146,2026-07-29,CLI-0158,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Centro-Oeste,MT,1,399.90,260.00,0.12,Loja Online,2026-07-29T15:35:57-04:00
+PED-00147,2026-07-29,CLI-0115,PROD-001,Processador de seis núcleos,Hardware,Centro-Oeste,MT,1,899.90,650.00,0.00,Loja Física,2026-07-29T17:03:59-04:00
+PED-00148,2026-07-29,CLI-0054,PROD-003,Placa-mãe,Hardware,Sul,RS,2,649.90,460.00,0.12,Loja Online,2026-07-29T18:31:57-04:00
+PED-00149,2026-07-29,CLI-0092,PROD-006,Monitor de 24 polegadas,Eletrônicos,Norte,AP,1,799.90,570.00,0.03,Loja Online,2026-07-29T23:30:41-04:00
+PED-00150,2026-07-30,CLI-0118,PROD-007,Impressora multifuncional,Eletrônicos,Sul,SC,2,1099.90,790.00,0.08,Loja Online,2026-07-30T07:37:33-04:00
+PED-00151,2026-07-30,CLI-0039,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Norte,TO,3,39.90,15.00,0.08,Loja Online,2026-07-30T19:32:28-04:00
+PED-00152,2026-07-30,CLI-0026,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,SE,5,39.90,15.00,0.08,Loja Física,2026-07-30T19:55:55-04:00
+PED-00153,2026-07-30,CLI-0146,PROD-003,Placa-mãe,Hardware,Norte,RO,2,649.90,460.00,0.05,Loja Online,2026-07-30T21:35:00-04:00
+PED-00154,2026-07-31,CLI-0130,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,PI,2,1899.90,1450.00,0.10,Loja Online,2026-07-31T07:43:18-04:00
+PED-00155,2026-07-31,CLI-0152,PROD-013,Fone de ouvido com microfone,Acessórios,Sudeste,MS,1,129.90,65.00,0.15,Loja Online,2026-07-31T13:42:45-04:00
+PED-00156,2026-07-31,CLI-0066,PROD-008,Roteador sem fio,Eletrônicos,Norte,AM,1,249.90,155.00,0.15,Loja Física,2026-07-31T14:45:31-04:00
+PED-00157,2026-07-31,CLI-0093,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,SE,2,1099.90,790.00,0.15,Loja Online,2026-07-31T16:05:31-04:00
+PED-00158,2026-07-31,CLI-0048,PROD-013,Fone de ouvido com microfone,Acessórios,Centro-Oeste,MT,2,129.90,65.00,0.10,Loja Online,2026-07-31T16:34:06-04:00
+PED-00159,2026-07-31,CLI-0091,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,AL,5,129.90,65.00,0.08,Loja Física,2026-07-31T17:52:46-04:00
+PED-00160,2026-07-31,CLI-0017,PROD-001,Processador de seis núcleos,Hardware,Nordeste,PI,1,899.90,650.00,0.10,Loja Online,2026-07-31T19:24:42-04:00
+PED-00161,2026-08-01,CLI-0086,PROD-011,Mouse sem fio,Acessórios,Sul,RS,4,79.90,38.00,0.08,Loja Online,2026-08-01T11:25:55-04:00
+PED-00162,2026-08-01,CLI-0018,PROD-009,Caixa de som portátil,Eletrônicos,Sudeste,SP,1,179.90,105.00,0.03,Loja Física,2026-08-01T13:25:51-04:00
+PED-00163,2026-08-02,CLI-0093,PROD-004,Memória RAM de 16 GB,Hardware,Nordeste,SE,1,279.90,180.00,0.15,Loja Online,2026-08-02T06:48:26-04:00
+PED-00164,2026-08-02,CLI-0034,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Norte,AM,1,39.90,,0.00,Loja Online,2026-08-02T07:40:21-04:00
+PED-00165,2026-08-02,CLI-0129,PROD-012,Teclado com fio,Acessórios,Nordeste,BA,1,89.90,45.00,0.15,Loja Online,2026-08-02T08:12:56-04:00
+PED-00166,2026-08-02,CLI-0026,PROD-006,Monitor de 24 polegadas,Eletrônicos,Nordeste,SE,1,799.90,570.00,0.05,Loja Física,2026-08-02T10:25:43-04:00
+PED-00167,2026-08-02,CLI-0103,PROD-010,Câmera de vídeo para computador,Eletrônicos,Nordeste,RN,2,159.90,90.00,0.08,Loja Física,2026-08-02T12:23:47-04:00
+PED-00168,2026-08-02,CLI-0078,PROD-006,Monitor de 24 polegadas,Eletrônicos,Norte,AM,1,799.90,570.00,0.00,Loja Online,2026-08-02T13:10:57-04:00
+PED-00169,2026-08-02,CLI-0035,PROD-001,Processador de seis núcleos,Hardware,Norte,SC,2,899.90,650.00,0.05,Loja Física,2026-08-02T17:52:02-04:00
+PED-00170,2026-08-02,CLI-0096,PROD-006,Monitor de 24 polegadas,Eletrônicos,Sudeste,SP,3,799.90,570.00,0.08,Loja Física,2026-08-02T19:29:05-04:00
+PED-00171,2026-08-02,CLI-0020,PROD-001,Processador de seis núcleos,Hardware,Sudeste,ES,2,899.90,650.00,0.15,Loja Online,2026-08-02T21:03:19-04:00
+PED-00172,2026-08-03,CLI-0015,PROD-001,Processador de seis núcleos,Hardware,Nordeste,BA,3,899.90,650.00,0.12,Loja Online,2026-08-03T03:19:30-04:00
+PED-00173,2026-08-03,CLI-0084,PROD-008,Roteador sem fio,Eletrônicos,Nordeste,AL,2,249.90,,0.10,Loja Online,2026-08-03T04:50:34-04:00
+PED-00174,2026-08-03,CLI-0157,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,AL,2,129.90,65.00,0.00,Loja Online,2026-08-03T06:06:00-04:00
+PED-00175,2026-08-03,CLI-0088,PROD-009,Caixa de som portátil,Eletrônicos,Nordeste,PE,1,179.90,105.00,0.40,Loja Física,2026-08-03T09:06:46-04:00
+PED-00176,2026-08-03,CLI-0127,PROD-008,Roteador sem fio,Eletrônicos,Nordeste,PB,3,249.90,155.00,0.08,Loja Física,2026-08-03T09:21:18-04:00
+PED-00177,2026-08-03,CLI-0113,PROD-013,Fone de ouvido com microfone,Acessórios,Norte,RO,1,129.90,65.00,0.05,Loja Online,2026-08-03T11:32:58-04:00
+PED-00178,2026-08-03,CLI-0117,PROD-009,Caixa de som portátil,Eletrônicos,Sudeste,SP,1,179.90,105.00,0.00,Loja Online,2026-08-03T13:30:19-04:00
+PED-00179,2026-08-03,CLI-0117,PROD-005,Unidade de armazenamento de 1 TB,Hardware,,SP,1,399.90,260.00,0.00,Loja Física,2026-08-03T14:18:38-04:00
+PED-00180,2026-08-03,CLI-0055,PROD-015,Suporte para computador portátil,Acessórios,Sudeste,MG,2,99.90,48.00,0.00,Loja Online,2026-08-03T18:09:30-04:00
+PED-00181,2026-08-03,CLI-0003,PROD-009,Caixa de som portátil,Eletrônicos,Nordeste,PI,1,179.90,105.00,0.08,Loja Online,2026-08-03T22:05:23-04:00
+PED-00182,2026-08-03,CLI-0131,PROD-004,Memória RAM de 16 GB,Hardware,Sul,SC,1,279.90,180.00,0.00,Loja Online,2026-08-03T23:57:40-04:00
+PED-00183,2026-08-04,CLI-0153,PROD-012,Teclado com fio,Acessórios,Centro-Oeste,DF,3,89.90,45.00,0.08,Loja Online,2026-08-04T00:11:47-04:00
+PED-00184,2026-08-04,CLI-0036,PROD-003,Placa-mãe,Hardware,Sul,PR,1,649.90,460.00,0.00,Loja Física,2026-08-04T10:51:22-04:00
+PED-00185,2026-08-04,CLI-0040,PROD-002,Placa de vídeo de 8 GB,Hardware,Norte,RO,1,1899.90,1450.00,0.05,Loja Física,2026-08-04T11:15:19-04:00
+PED-00186,2026-08-04,CLI-0072,PROD-012,Teclado com fio,Acessórios,Nordeste,PB,1,89.90,45.00,0.08,Loja Física,2026-08-04T18:56:03-04:00
+PED-00187,2026-08-04,CLI-0076,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,CE,2,129.90,65.00,0.00,Loja Física,2026-08-04T19:56:10-04:00
+PED-00188,2026-08-05,CLI-0031,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,MA,1,99.90,48.00,0.05,Loja Online,2026-08-05T01:26:20-04:00
+PED-00189,2026-08-05,CLI-0105,PROD-009,Caixa de som portátil,Eletrônicos,Norte,AC,1,179.90,105.00,0.00,Loja Online,2026-08-05T07:29:35-04:00
+PED-00190,2026-08-05,CLI-0043,PROD-008,Roteador sem fio,Eletrônicos,Nordeste,BA,2,249.90,155.00,0.05,Loja Física,2026-08-05T15:18:15-04:00
+PED-00191,2026-08-05,CLI-0088,PROD-011,Mouse sem fio,Acessórios,Nordeste,PE,4,79.90,38.00,0.08,Loja Online,2026-08-05T21:18:57-04:00
+PED-00192,2026-08-06,CLI-0052,PROD-001,Processador de seis núcleos,Hardware,Centro-Oeste,DF,1,899.90,650.00,0.00,Loja Online,2026-08-06T00:26:42-04:00
+PED-00193,2026-08-06,CLI-0099,PROD-006,Monitor de 24 polegadas,Eletrônicos,Norte,AC,1,799.90,570.00,0.10,Loja Online,2026-08-06T07:12:19-04:00
+PED-00194,2026-08-06,CLI-0114,PROD-012,Teclado com fio,Acessórios,Nordeste,RN,1,89.90,45.00,0.05,Loja Física,2026-08-06T19:23:16-04:00
+PED-00195,2026-08-06,CLI-0097,PROD-011,Mouse sem fio,Acessórios,Nordeste,PE,3,79.90,38.00,0.08,Loja Online,2026-08-06T19:51:06-04:00
+PED-00196,2026-08-06,CLI-0105,PROD-013,Fone de ouvido com microfone,Acessórios,Norte,AC,2,129.90,65.00,0.10,Loja Online,2026-08-06T23:18:08-04:00
+PED-00197,2026-08-07,CLI-0021,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,BA,3,129.90,65.00,0.10,Loja Online,2026-08-07T00:17:09-04:00
+PED-00198,2026-08-07,CLI-0145,PROD-010,Câmera de vídeo para computador,Eletrônicos,Centro-Oeste,MS,1,159.90,90.00,0.00,Loja Online,2026-08-07T02:30:52-04:00
+PED-00199,2026-08-07,CLI-0097,PROD-008,Roteador sem fio,Eletrônicos,Nordeste,PE,3,249.90,155.00,0.08,Loja Online,2026-08-07T05:03:31-04:00
+PED-00200,2026-08-07,CLI-0018,PROD-011,Mouse sem fio,Acessórios,Sudeste,SP,1,79.90,38.00,0.00,Loja Online,2026-08-07T05:49:23-04:00
+PED-00201,2026-08-07,CLI-0103,PROD-010,Câmera de vídeo para computador,Eletrônicos,Nordeste,RN,3,159.90,90.00,0.08,Loja Física,2026-08-07T15:26:30-04:00
+PED-00202,2026-08-07,CLI-0099,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Norte,AC,2,39.90,15.00,0.12,Loja Física,2026-08-07T16:32:44-04:00
+PED-00203,2026-08-07,CLI-0100,PROD-011,Mouse sem fio,Acessórios,Nordeste,PE,5,79.90,38.00,0.08,Loja Física,2026-08-07T17:23:38-04:00
+PED-00204,2026-08-08,CLI-0099,PROD-001,Processador de seis núcleos,Hardware,Norte,AC,1,899.90,650.00,0.12,Loja Física,2026-08-08T19:41:40-04:00
+PED-00205,2026-08-09,CLI-0084,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,AL,1,1099.90,790.00,0.05,Loja Online,2026-08-09T09:52:42-04:00
+PED-00206,2026-08-09,CLI-0058,PROD-011,Mouse sem fio,Acessórios,Nordeste,SE,2,79.90,38.00,0.05,Loja Física,2026-08-09T13:03:06-04:00
+PED-00207,2026-08-09,CLI-0124,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,BA,1,1899.90,1450.00,0.08,Loja Física,2026-08-09T14:45:18-04:00
+PED-00208,2026-08-09,CLI-0117,PROD-006,Monitor de 24 polegadas,Eletrônicos,Sudeste,SP,1,799.90,570.00,0.12,Loja Online,2026-08-09T15:26:53-04:00
+PED-00209,2026-08-09,CLI-0100,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,PE,2,99.90,48.00,0.08,Loja Física,2026-08-09T15:31:52-04:00
+PED-00210,2026-08-09,CLI-0133,PROD-010,Câmera de vídeo para computador,Eletrônicos,Centro-Oeste,MS,1,159.90,90.00,0.05,Loja Física,2026-08-09T17:52:57-04:00
+PED-00211,2026-08-09,CLI-0145,PROD-008,Roteador sem fio,Eletrônicos,Centro-Oeste,MS,1,249.90,155.00,0.00,Loja Online,2026-08-09T17:58:01-04:00
+PED-00212,2026-08-09,CLI-0109,PROD-010,Câmera de vídeo para computador,Eletrônicos,Centro-Oeste,GO,1,159.90,90.00,0.00,Loja Online,2026-08-09T19:25:44-04:00
+PED-00213,2026-08-09,CLI-0149,PROD-008,Roteador sem fio,Eletrônicos,Nordeste,CE,3,249.90,155.00,0.08,Loja Física,2026-08-09T19:57:56-04:00
+PED-00214,2026-08-10,CLI-0151,PROD-008,Roteador sem fio,Eletrônicos,Centro-Oeste,MT,3,249.90,155.00,0.12,Loja Online,2026-08-10T08:24:48-04:00
+PED-00215,2026-08-10,CLI-0090,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,AL,,99.90,48.00,0.08,Loja Física,2026-08-10T10:04:44-04:00
+PED-00216,2026-08-10,CLI-0021,PROD-008,Roteador sem fio,Eletrônicos,Nordeste,BA,2,249.90,155.00,0.05,Loja Online,2026-08-10T16:33:51-04:00
+PED-00217,2026-08-10,CLI-0156,PROD-008,Roteador sem fio,Eletrônicos,Sudeste,SP,1,249.90,155.00,0.00,Loja Física,2026-08-10T18:38:41-04:00
+PED-00218,2026-08-10,CLI-0084,PROD-012,Teclado com fio,Acessórios,Nordeste,AL,2,89.90,45.00,0.00,Loja Física,2026-08-10T18:46:33-04:00
+PED-00219,2026-08-10,CLI-0132,PROD-011,Mouse sem fio,Acessórios,Nordeste,AL,2,79.90,38.00,0.05,Loja Online,2026-08-10T20:51:17-04:00
+PED-00220,2026-08-11,CLI-0095,PROD-009,Caixa de som portátil,Eletrônicos,Sudeste,MG,3,179.90,105.00,0.10,Loja Online,2026-08-11T00:51:21-04:00
+PED-00221,2026-08-11,CLI-0003,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,PI,4,39.90,15.00,0.12,Loja Online,2026-08-11T07:41:54-04:00
+PED-00222,2026-08-11,CLI-0109,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Centro-Oeste,GO,3,39.90,15.00,0.08,Loja Online,2026-08-11T08:11:11-04:00
+PED-00223,2026-08-11,CLI-0141,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,BA,1,1899.90,1450.00,0.00,Loja Física,2026-08-11T11:21:27-04:00
+PED-00224,2026-08-11,CLI-0086,PROD-007,Impressora multifuncional,Eletrônicos,Sul,RS,2,1099.90,790.00,0.15,Loja Física,2026-08-11T13:29:16-04:00
+PED-00225,2026-08-11,CLI-0019,PROD-003,Placa-mãe,Hardware,Centro-Oeste,MS,3,649.90,460.00,0.10,Loja Online,2026-08-11T14:11:52-04:00
+PED-00226,2026-08-11,CLI-0158,PROD-012,Teclado com fio,Acessórios,Centro-Oeste,MT,2,89.90,45.00,0.15,Loja Online,2026-08-11T20:24:38-04:00
+PED-00227,2026-08-11,CLI-0053,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,MA,1,99.90,48.00,0.05,Loja Online,2026-08-11T23:11:45-04:00
+PED-00228,2026-08-12,CLI-0127,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,PB,3,1099.90,790.00,0.08,Loja Online,2026-08-12T07:32:23-04:00
+PED-00229,2026-08-12,CLI-0128,PROD-006,Monitor de 24 polegadas,Eletrônicos,Sul,PR,1,799.90,570.00,-0.05,Loja Online,2026-08-12T08:51:45-04:00
+PED-00230,2026-08-12,CLI-0039,PROD-015,Suporte para computador portátil,Acessórios,Norte,TO,1,99.90,48.00,0.05,Loja Online,2026-08-12T09:01:11-04:00
+PED-00231,2026-08-12,CLI-0075,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,PB,4,99.90,48.00,0.08,Loja Física,2026-08-12T09:35:23-04:00
+PED-00232,2026-08-12,CLI-0037,PROD-004,Memória RAM de 16 GB,Hardware,Sul,RS,3,279.90,,0.40,Loja Física,2026-08-12T13:20:22-04:00
+PED-00233,2026-08-12,CLI-0137,PROD-001,Processador de seis núcleos,Hardware,Sudeste,SP,1,899.90,650.00,0.15,Loja Online,2026-08-12T14:19:08-04:00
+PED-00234,2026-08-12,CLI-0091,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,AL,3,99.90,48.00,0.08,Loja Física,2026-08-12T14:26:48-04:00
+PED-00235,2026-08-13,CLI-0159,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Centro-Oeste,DF,2,399.90,260.00,0.03,Loja Online,2026-08-13T01:28:21-04:00
+PED-00236,2026-08-13,CLI-0036,PROD-015,Suporte para computador portátil,Acessórios,Sul,PR,1,99.90,48.00,0.15,Loja Online,2026-08-13T03:46:27-04:00
+PED-00237,2026-08-13,CLI-0142,PROD-011,Mouse sem fio,Acessórios,Sul,PR,1,79.90,38.00,0.15,Loja Online,2026-08-13T06:09:00-04:00
+PED-00238,2026-08-13,CLI-0094,PROD-002,Placa de vídeo de 8 GB,Hardware,Norte,AC,1,1899.90,1450.00,0.00,Loja Online,2026-08-13T11:41:26-04:00
+PED-00239,2026-08-13,CLI-0020,PROD-004,Memória RAM de 16 GB,Hardware,Sudeste,ES,2,279.90,180.00,0.03,Loja Física,2026-08-13T11:47:41-04:00
+PED-00240,2026-08-13,CLI-0157,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,AL,4,39.90,15.00,0.10,Loja Online,2026-08-13T12:26:40-04:00
+PED-00241,2026-08-13,CLI-0014,PROD-007,Impressora multifuncional,Eletrônicos,Centro-Oeste,GO,3,1099.90,790.00,0.08,Loja Física,2026-08-13T17:54:18-04:00
+PED-00242,2026-08-13,CLI-0042,PROD-003,Placa-mãe,Hardware,Norte,AC,1,649.90,460.00,0.10,Loja Física,2026-08-13T18:49:43-04:00
+PED-00243,2026-08-13,CLI-0020,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Sudeste,ES,2,39.90,15.00,0.12,Loja Física,2026-08-13T19:05:26-04:00
+PED-00244,2026-08-14,CLI-0004,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,BA,2,39.90,15.00,0.03,Loja Física,2026-08-14T09:14:24-04:00
+PED-00245,2026-08-14,CLI-0039,PROD-011,Mouse sem fio,Acessórios,Norte,TO,1,79.90,38.00,0.03,Loja Física,2026-08-14T11:01:03-04:00
+PED-00246,2026-08-14,CLI-0014,PROD-015,Suporte para computador portátil,Acessórios,Centro-Oeste,GO,5,99.90,48.00,0.08,Loja Online,2026-08-14T12:21:52-04:00
+PED-00247,2026-08-14,CLI-0065,PROD-004,Memória RAM de 16 GB,Hardware,Nordeste,PI,1,279.90,180.00,0.12,Loja Física,2026-08-14T15:42:22-04:00
+PED-00248,2026-08-14,CLI-0149,PROD-009,Caixa de som portátil,Eletrônicos,Nordeste,CE,1,179.90,105.00,0.00,Loja Online,2026-08-14T15:44:41-04:00
+PED-00249,2026-08-14,CLI-0152,PROD-001,Processador de seis núcleos,Hardware,Centro-Oeste,MS,1,899.90,650.00,0.05,Loja Física,2026-08-14T17:33:47-04:00
+PED-00250,2026-08-14,CLI-0004,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Nordeste,BA,1,399.90,260.00,0.10,Loja Física,2026-08-14T17:43:11-04:00
+PED-00251,2026-08-14,CLI-0021,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,BA,4,129.90,65.00,0.08,Loja Online,2026-08-14T21:29:03-04:00
+PED-00252,2026-08-15,CLI-0076,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,CE,1,99.90,48.00,0.15,Loja Online,2026-08-15T03:31:36-04:00
+PED-00253,2026-08-15,CLI-0159,PROD-009,Caixa de som portátil,Eletrônicos,Centro-Oeste,DF,1,179.90,105.00,0.15,Loja Online,2026-08-15T08:13:02-04:00
+PED-00254,2026-08-15,CLI-0023,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Nordeste,BA,1,399.90,260.00,0.08,Loja Física,2026-08-15T11:27:03-04:00
+PED-00255,2026-08-15,CLI-0066,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Norte,AM,2,399.90,260.00,0.12,Loja Física,2026-08-15T12:44:14-04:00
+PED-00256,2026-08-15,CLI-0026,PROD-012,Teclado com fio,Acessórios,Nordeste,SE,1,89.90,45.00,0.00,Loja Física,2026-08-15T13:51:54-04:00
+PED-00257,2026-08-15,CLI-0023,PROD-004,Memória RAM de 16 GB,Hardware,Nordeste,BA,2,279.90,180.00,0.00,Loja Física,2026-08-15T17:05:47-04:00
+PED-00258,2026-08-15,CLI-0003,PROD-006,Monitor de 24 polegadas,Eletrônicos,Nordeste,PI,1,799.90,570.00,0.00,Loja Física,2026-08-15T17:53:59-04:00
+PED-00259,2026-08-15,CLI-0080,PROD-003,Placa-mãe,Hardware,Nordeste,PI,3,649.90,460.00,0.08,Loja Online,2026-08-15T21:21:46-04:00
+PED-00260,2026-08-15,CLI-0103,PROD-009,Caixa de som portátil,Eletrônicos,Nordeste,RN,3,179.90,105.00,0.08,Loja Online,2026-08-15T23:47:27-04:00
+PED-00261,2026-08-15,CLI-0151,PROD-004,Memória RAM de 16 GB,Hardware,Centro-Oeste,MT,1,279.90,180.00,0.00,Loja Online,2026-08-16T00:03:34-04:00
+PED-00262,2026-08-16,CLI-0052,PROD-006,Monitor de 24 polegadas,Eletrônicos,Centro-Oeste,DF,2,799.90,570.00,0.10,Loja Física,2026-08-16T09:50:18-04:00
+PED-00263,2026-08-16,CLI-0046,PROD-008,Roteador sem fio,Eletrônicos,Nordeste,MA,2,249.90,155.00,0.12,Loja Física,2026-08-16T11:30:14-04:00
+PED-00264,2026-08-17,CLI-0139,PROD-012,Teclado com fio,Acessórios,Sul,SC,2,89.90,45.00,0.05,Loja Online,2026-08-17T10:26:24-04:00
+PED-00265,2026-08-17,CLI-0056,PROD-011,Mouse sem fio,Acessórios,Nordeste,PB,4,79.90,38.00,0.08,Loja Física,2026-08-17T12:31:03-04:00
+PED-00266,2026-08-17,CLI-0111,PROD-002,Placa de vídeo de 8 GB,Hardware,Sudeste,MG,3,1899.90,1450.00,0.08,Loja Online,2026-08-17T18:30:55-04:00
+PED-00267,2026-08-17,CLI-0078,PROD-012,Teclado com fio,Acessórios,Norte,AM,4,89.90,45.00,0.08,Loja Física,2026-08-17T18:55:37-04:00
+PED-00268,2026-08-17,CLI-0158,PROD-004,Memória RAM de 16 GB,Hardware,Centro-Oeste,MT,2,279.90,180.00,0.05,Loja Física,2026-08-17T18:56:45-04:00
+PED-00269,2026-08-18,CLI-0089,PROD-001,Processador de seis núcleos,Hardware,Norte,AP,1,899.90,650.00,0.03,Loja Online,2026-08-18T06:37:37-04:00
+PED-00270,2026-08-18,CLI-0056,PROD-012,Teclado com fio,Acessórios,Nordeste,PB,1,89.90,45.00,0.00,Loja Online,2026-08-18T06:54:11-04:00
+PED-00271,2026-08-18,CLI-0115,PROD-004,Memória RAM de 16 GB,Hardware,Centro-Oeste,MT,1,279.90,180.00,0.08,Loja Online,2026-08-18T09:55:56-04:00
+PED-00272,2026-08-18,CLI-0070,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,BA,4,129.90,65.00,0.08,Loja Física,2026-08-18T10:42:22-04:00
+PED-00273,2026-08-18,CLI-0079,PROD-013,Fone de ouvido com microfone,Acessórios,Sul,PR,5,129.90,65.00,0.08,Loja Física,2026-08-18T12:50:37-04:00
+PED-00274,2026-08-18,CLI-0107,PROD-007,Impressora multifuncional,Eletrônicos,Sudeste,SP,1,1099.90,790.00,0.05,Loja Online,2026-08-18T13:05:10-04:00
+PED-00275,2026-08-18,CLI-0153,PROD-011,Mouse sem fio,Acessórios,Centro-Oeste,DF,3,79.90,38.00,0.08,Loja Online,2026-08-18T14:06:03-04:00
+PED-00276,2026-08-18,CLI-0085,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,SE,1,1899.90,1450.00,0.00,Loja Online,2026-08-18T15:23:05-04:00
+PED-00277,2026-08-18,CLI-0022,PROD-007,Impressora multifuncional,Eletrônicos,Centro-Oeste,MS,2,1099.90,790.00,0.05,Loja Online,2026-08-18T15:30:13-04:00
+PED-00278,2026-08-18,CLI-0008,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Centro-Oeste,GO,1,39.90,15.00,0.03,Loja Física,2026-08-18T17:57:43-04:00
+PED-00279,2026-08-18,CLI-0089,PROD-009,Caixa de som portátil,Eletrônicos,Norte,AP,1,179.90,105.00,0.08,Loja Física,2026-08-18T19:59:56-04:00
+PED-00280,2026-08-19,CLI-0084,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,AL,3,1099.90,790.00,0.15,Loja Física,2026-08-19T11:47:13-04:00
+PED-00281,2026-08-19,CLI-0144,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,PB,2,1099.90,790.00,0.05,Loja Online,2026-08-19T15:06:31-04:00
+PED-00282,2026-08-19,CLI-0151,PROD-008,Roteador sem fio,Eletrônicos,Centro-Oeste,MT,1,249.90,155.00,0.05,Loja Física,2026-08-19T16:03:26-04:00
+PED-00283,2026-08-19,CLI-0153,PROD-011,Mouse sem fio,Acessórios,Centro-Oeste,DF,4,79.90,38.00,0.08,Loja Online,2026-08-19T19:27:18-04:00
+PED-00284,2026-08-20,CLI-0150,PROD-010,Câmera de vídeo para computador,Eletrônicos,Norte,PA,1,159.90,90.00,0.05,Loja Online,2026-08-20T07:00:17-04:00
+PED-00285,2026-08-20,CLI-0037,PROD-010,Câmera de vídeo para computador,Eletrônicos,Sul,RS,2,159.90,90.00,0.00,Loja Física,2026-08-20T09:35:21-04:00
+PED-00286,2026-08-20,CLI-0102,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Sudeste,RJ,1,399.90,260.00,0.15,Loja Física,2026-08-20T13:57:17-04:00
+PED-00287,2026-08-20,CLI-0136,PROD-008,Roteador sem fio,Eletrônicos,Norte,AP,1,249.90,155.00,0.05,Loja Online,2026-08-20T14:24:11-04:00
+PED-00288,2026-08-20,CLI-0121,PROD-001,Processador de seis núcleos,Hardware,Sudeste,RJ,1,899.90,650.00,0.05,Loja Física,2026-08-20T17:51:21-04:00
+PED-00289,2026-08-21,CLI-0019,PROD-004,Memória RAM de 16 GB,Hardware,Centro-Oeste,MS,1,279.90,180.00,0.00,Loja Online,2026-08-21T01:27:23-04:00
+PED-00290,2026-08-21,CLI-0035,PROD-009,Caixa de som portátil,Eletrônicos,Sul,SC,3,179.90,105.00,0.08,Loja Online,2026-08-21T02:17:47-04:00
+PED-00291,2026-08-21,CLI-0032,PROD-011,Mouse sem fio,Acessórios,Nordeste,PE,4,79.90,38.00,0.08,Loja Física,2026-08-21T10:55:19-04:00
+PED-00292,2026-08-21,CLI-0119,PROD-011,Mouse sem fio,Acessórios,Nordeste,AL,1,79.90,38.00,0.05,Loja Física,2026-08-21T14:53:03-04:00
+PED-00293,2026-08-21,CLI-0121,PROD-004,Memória RAM de 16 GB,Hardware,Sudeste,RJ,1,279.90,180.00,0.00,Loja Física,2026-08-21T19:36:00-04:00
+PED-00294,2026-08-21,CLI-0030,PROD-013,Fone de ouvido com microfone,Acessórios,Sudeste,RJ,1,129.90,65.00,0.10,Loja Online,2026-08-21T23:33:05-04:00
+PED-00295,2026-08-22,CLI-0124,PROD-008,Roteador sem fio,Eletrônicos,Nordeste,BA,3,249.90,155.00,0.10,Loja Física,2026-08-22T10:58:33-04:00
+PED-00296,2026-08-22,CLI-0151,PROD-012,Teclado com fio,Acessórios,Centro-Oeste,MT,4,89.90,45.00,0.08,Loja Física,2026-08-22T11:28:57-04:00
+PED-00297,2026-08-22,CLI-0097,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,PE,2,1099.90,790.00,0.12,Loja Física,2026-08-22T12:32:40-04:00
+PED-00298,2026-08-22,CLI-0110,PROD-010,Câmera de vídeo para computador,Eletrônicos,Nordeste,RN,2,159.90,90.00,0.08,Loja Física,2026-08-22T14:35:20-04:00
+PED-00299,2026-08-23,CLI-0079,PROD-007,Impressora multifuncional,Eletrônicos,Sul,PR,3,1099.90,790.00,0.08,Loja Online,2026-08-23T03:38:49-04:00
+PED-00300,2026-08-23,CLI-0022,PROD-009,Caixa de som portátil,Eletrônicos,Centro-Oeste,MS,1,179.90,105.00,0.10,Loja Física,2026-08-23T09:38:42-04:00
+PED-00301,2026-08-23,CLI-0061,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,MA,4,99.90,48.00,0.12,Loja Online,2026-08-23T13:30:50-04:00
+PED-00302,2026-08-23,CLI-0076,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,CE,2,1899.90,1450.00,0.08,Loja Online,2026-08-23T17:01:17-04:00
+PED-00303,2026-08-24,CLI-0067,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,PI,1,39.90,15.00,0.03,Loja Online,2026-08-24T03:23:22-04:00
+PED-00304,2026-08-24,CLI-0141,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,BA,3,39.90,15.00,0.08,Loja Física,2026-08-24T17:09:57-04:00
+PED-00305,2026-08-24,CLI-0008,PROD-007,Impressora multifuncional,Eletrônicos,Centro-Oeste,GO,3,1099.90,790.00,0.12,Loja Online,2026-08-24T18:40:25-04:00
+PED-00306,2026-08-24,CLI-0065,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,PI,2,1099.90,790.00,0.08,Loja Online,2026-08-24T23:59:14-04:00
+PED-00307,2026-08-24,CLI-0042,PROD-002,Placa de vídeo de 8 GB,Hardware,Norte,AC,,1899.90,1450.00,0.08,Loja Online,2026-08-25T00:00:55-04:00
+PED-00308,2026-08-25,CLI-0154,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,MA,5,99.90,48.00,0.15,Loja Online,2026-08-25T02:00:02-04:00
+PED-00309,2026-08-25,CLI-0040,PROD-003,Placa-mãe,Hardware,Norte,RO,1,649.90,460.00,0.05,Loja Online,2026-08-25T07:08:33-04:00
+PED-00310,2026-08-25,CLI-0118,PROD-004,Memória RAM de 16 GB,Hardware,Sul,SC,1,279.90,180.00,0.05,Loja Online,2026-08-25T09:52:17-04:00
+PED-00311,2026-08-25,CLI-0063,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,PE,2,1899.90,1450.00,0.08,Loja Física,2026-08-25T12:32:49-04:00
+PED-00312,2026-08-25,CLI-0082,PROD-007,Impressora multifuncional,Eletrônicos,Norte,AC,1,1099.90,790.00,0.00,Loja Online,2026-08-25T16:26:02-04:00
+PED-00313,2026-08-25,CLI-0013,PROD-010,Câmera de vídeo para computador,Eletrônicos,Norte,AM,3,159.90,90.00,0.08,Loja Física,2026-08-25T18:04:24-04:00
+PED-00314,2026-08-26,CLI-0027,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,PB,1,1899.90,1450.00,0.05,Loja Online,2026-08-26T01:04:28-04:00
+PED-00315,2026-08-26,CLI-0073,PROD-012,Teclado com fio,Acessórios,Sul,SC,2,89.90,45.00,0.10,Loja Física,2026-08-26T11:54:45-04:00
+PED-00316,2026-08-26,CLI-0043,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,BA,2,1099.90,790.00,0.03,Loja Física,2026-08-26T12:38:03-04:00
+PED-00317,2026-08-26,CLI-0130,PROD-003,Placa-mãe,Hardware,Nordeste,PI,1,649.90,460.00,0.05,Loja Física,2026-08-26T14:52:44-04:00
+PED-00318,2026-08-26,CLI-0132,PROD-012,Teclado com fio,Acessórios,Sul,AL,5,89.90,45.00,0.08,Loja Física,2026-08-26T15:09:00-04:00
+PED-00319,2026-08-26,CLI-0117,PROD-015,Suporte para computador portátil,Acessórios,Sudeste,SP,1,99.90,48.00,0.05,Loja Online,2026-08-26T16:25:36-04:00
+PED-00320,2026-08-26,CLI-0127,PROD-011,Mouse sem fio,Acessórios,Nordeste,PB,2,79.90,38.00,0.00,Loja Online,2026-08-26T22:05:30-04:00
+PED-00321,2026-08-27,CLI-0012,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Nordeste,PE,1,399.90,260.00,0.15,Loja Física,2026-08-27T09:20:18-04:00
+PED-00322,2026-08-27,CLI-0159,PROD-012,Teclado com fio,Acessórios,Centro-Oeste,DF,4,89.90,45.00,0.08,Loja Online,2026-08-27T16:05:12-04:00
+PED-00323,2026-08-27,CLI-0068,PROD-012,Teclado com fio,Acessórios,Nordeste,PB,3,89.90,45.00,0.15,Loja Online,2026-08-27T20:35:49-04:00
+PED-00324,2026-08-27,CLI-0083,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Centro-Oeste,MS,2,39.90,15.00,0.03,Loja Online,2026-08-27T20:58:30-04:00
+PED-00325,2026-08-28,CLI-0065,PROD-010,Câmera de vídeo para computador,Eletrônicos,Nordeste,PI,1,159.90,90.00,0.00,Loja Online,2026-08-28T05:55:04-04:00
+PED-00326,2026-08-28,CLI-0090,PROD-010,Câmera de vídeo para computador,Eletrônicos,Nordeste,AL,3,159.90,90.00,0.08,Loja Online,2026-08-28T07:07:09-04:00
+PED-00327,2026-08-28,CLI-0087,PROD-006,Monitor de 24 polegadas,Eletrônicos,Sudeste,RJ,1,799.90,570.00,0.00,Loja Física,2026-08-28T13:51:58-04:00
+PED-00328,2026-08-28,CLI-0070,PROD-011,Mouse sem fio,Acessórios,Nordeste,BA,3,79.90,38.00,0.08,Loja Online,2026-08-28T13:59:00-04:00
+PED-00329,2026-08-29,CLI-0052,PROD-001,Processador de seis núcleos,Hardware,Centro-Oeste,DF,1,899.90,650.00,0.12,Loja Online,2026-08-29T07:07:33-04:00
+PED-00330,2026-08-29,CLI-0070,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,BA,2,39.90,15.00,0.03,Loja Física,2026-08-29T10:07:53-04:00
+PED-00331,2026-08-29,CLI-0029,PROD-008,Roteador sem fio,Eletrônicos,Nordeste,CE,1,249.90,155.00,0.15,Loja Física,2026-08-29T17:22:28-04:00
+PED-00332,2026-08-29,CLI-0094,PROD-002,Placa de vídeo de 8 GB,Hardware,Norte,AC,1,1899.90,1450.00,0.15,Loja Online,2026-08-29T18:23:25-04:00
+PED-00333,2026-08-29,CLI-0073,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Sul,SC,1,399.90,260.00,0.03,Loja Física,2026-08-29T18:44:57-04:00
+PED-00334,2026-08-30,CLI-0073,PROD-015,Suporte para computador portátil,Acessórios,Sul,SC,2,99.90,48.00,1.20,Loja Online,2026-08-30T02:55:16-04:00
+PED-00335,2026-08-30,CLI-0004,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Nordeste,BA,2,399.90,260.00,0.12,Loja Online,2026-08-30T09:52:46-04:00
+PED-00336,2026-08-30,CLI-0007,PROD-010,Câmera de vídeo para computador,Eletrônicos,Nordeste,PI,2,159.90,90.00,0.05,Loja Física,2026-08-30T15:49:09-04:00
+PED-00337,2026-08-30,CLI-0054,PROD-002,Placa de vídeo de 8 GB,Hardware,Sul,RS,2,1899.90,1450.00,0.00,Loja Física,2026-08-30T19:49:25-04:00
+PED-00338,2026-08-31,CLI-0114,PROD-004,Memória RAM de 16 GB,Hardware,Nordeste,RN,2,279.90,180.00,0.05,Loja Online,2026-08-31T04:15:37-04:00
+PED-00339,2026-08-31,CLI-0017,PROD-011,Mouse sem fio,Acessórios,Nordeste,PI,1,79.90,38.00,0.08,Loja Física,2026-08-31T09:54:53-04:00
+PED-00340,2026-08-31,CLI-0156,PROD-007,Impressora multifuncional,Eletrônicos,Sudeste,SP,2,1099.90,790.00,0.15,Loja Online,2026-08-31T11:19:46-04:00
+PED-00341,2026-08-31,CLI-0033,PROD-012,Teclado com fio,Acessórios,Norte,TO,1,89.90,45.00,0.00,Loja Física,2026-08-31T15:26:49-04:00
+PED-00342,2026-08-31,CLI-0067,PROD-009,Caixa de som portátil,Eletrônicos,Nordeste,PI,3,179.90,105.00,0.12,Loja Online,2026-08-31T16:42:10-04:00
+PED-00343,2026-08-31,CLI-0095,PROD-011,Mouse sem fio,Acessórios,Sudeste,MG,1,79.90,38.00,0.00,Loja Online,2026-08-31T18:25:56-04:00
+PED-00344,2026-09-01,CLI-0155,PROD-007,Impressora multifuncional,Eletrônicos,Norte,PA,1,1099.90,790.00,0.05,Loja Online,2026-09-01T11:36:43-04:00
+PED-00345,2026-09-01,CLI-0148,PROD-006,Monitor de 24 polegadas,Eletrônicos,Norte,TO,1,799.90,570.00,0.12,Loja Física,2026-09-01T15:10:56-04:00
+PED-00346,2026-09-02,CLI-0116,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,MA,1,129.90,65.00,0.12,Loja Online,2026-09-02T08:56:34-04:00
+PED-00347,2026-09-02,CLI-0081,PROD-004,Memória RAM de 16 GB,Hardware,Nordeste,RN,2,279.90,180.00,0.10,Loja Online,2026-09-02T11:45:05-04:00
+PED-00348,2026-09-02,CLI-0044,PROD-012,Teclado com fio,Acessórios,Nordeste,PB,1,89.90,45.00,0.05,Loja Física,2026-09-02T11:48:59-04:00
+PED-00349,2026-09-02,CLI-0078,PROD-011,Mouse sem fio,Acessórios,Norte,AM,3,79.90,38.00,0.08,Loja Física,2026-09-02T11:58:56-04:00
+PED-00350,2026-09-02,CLI-0116,PROD-001,Processador de seis núcleos,Hardware,Nordeste,MA,1,899.90,650.00,0.15,Loja Online,2026-09-02T17:00:12-04:00
+PED-00351,2026-09-03,CLI-0055,PROD-011,Mouse sem fio,Acessórios,Sudeste,MG,1,79.90,38.00,0.00,Loja Online,2026-09-03T02:46:12-04:00
+PED-00352,2026-09-03,CLI-0137,PROD-008,Roteador sem fio,Eletrônicos,Sudeste,SP,2,249.90,155.00,0.00,Loja Online,2026-09-03T06:51:32-04:00
+PED-00353,2026-09-03,CLI-0087,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Sudeste,RJ,1,399.90,260.00,0.00,Loja Online,2026-09-03T10:24:50-04:00
+PED-00354,2026-09-03,CLI-0067,PROD-012,Teclado com fio,Acessórios,Nordeste,PI,4,89.90,45.00,0.08,Loja Online,2026-09-03T14:13:47-04:00
+PED-00355,2026-09-04,CLI-0099,PROD-008,Roteador sem fio,Eletrônicos,Norte,AC,2,249.90,155.00,0.12,Loja Online,2026-09-04T06:03:52-04:00
+PED-00356,2026-09-04,CLI-0026,PROD-011,Mouse sem fio,Acessórios,Nordeste,SE,1,79.90,38.00,0.00,Loja Física,2026-09-04T19:31:28-04:00
+PED-00357,2026-09-05,CLI-0008,PROD-001,Processador de seis núcleos,Hardware,Centro-Oeste,GO,3,899.90,650.00,0.15,Loja Online,2026-09-05T02:41:45-04:00
+PED-00358,2026-09-05,CLI-0042,PROD-012,Teclado com fio,Acessórios,Norte,AC,4,89.90,45.00,0.08,Loja Online,2026-09-05T06:04:22-04:00
+PED-00359,2026-09-05,CLI-0091,PROD-001,Processador de seis núcleos,Hardware,Nordeste,AL,1,899.90,,0.08,Loja Online,2026-09-05T08:46:12-04:00
+PED-00360,2026-09-05,CLI-0047,PROD-010,Câmera de vídeo para computador,Eletrônicos,Centro-Oeste,GO,1,159.90,90.00,0.03,Loja Online,2026-09-05T14:18:49-04:00
+PED-00361,2026-09-05,CLI-0133,PROD-010,Câmera de vídeo para computador,Eletrônicos,Centro-Oeste,MS,1,159.90,90.00,0.10,Loja Online,2026-09-05T15:19:39-04:00
+PED-00362,2026-09-06,CLI-0090,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,AL,1,1899.90,1450.00,0.00,Loja Online,2026-09-06T00:32:52-04:00
+PED-00363,2026-09-06,CLI-0102,PROD-002,Placa de vídeo de 8 GB,Hardware,Sudeste,RJ,2,1899.90,1450.00,0.00,Loja Online,2026-09-06T01:29:28-04:00
+PED-00364,2026-09-06,CLI-0080,PROD-010,Câmera de vídeo para computador,Eletrônicos,Nordeste,PI,1,159.90,90.00,0.00,Loja Online,2026-09-06T03:30:28-04:00
+PED-00365,2026-09-06,CLI-0086,PROD-010,Câmera de vídeo para computador,Eletrônicos,Sul,RS,1,159.90,90.00,0.03,Loja Online,2026-09-06T03:47:27-04:00
+PED-00366,2026-09-06,CLI-0100,PROD-011,Mouse sem fio,Acessórios,Nordeste,PE,1,79.90,38.00,0.08,Loja Física,2026-09-06T12:55:25-04:00
+PED-00367,2026-09-06,CLI-0139,PROD-013,Fone de ouvido com microfone,Acessórios,Sul,SC,3,129.90,65.00,0.08,Loja Física,2026-09-06T15:12:27-04:00
+PED-00368,2026-09-06,CLI-0061,PROD-008,Roteador sem fio,Eletrônicos,,MA,2,249.90,155.00,0.03,Loja Física,2026-09-06T17:06:45-04:00
+PED-00369,2026-09-06,CLI-0034,PROD-006,Monitor de 24 polegadas,Eletrônicos,Norte,AM,1,799.90,570.00,0.40,Loja Online,2026-09-06T19:07:59-04:00
+PED-00370,2026-09-07,CLI-0090,PROD-008,Roteador sem fio,Eletrônicos,Nordeste,AL,2,249.90,155.00,0.03,Loja Online,2026-09-07T00:52:17-04:00
+PED-00371,2026-09-07,CLI-0069,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Centro-Oeste,GO,1,399.90,260.00,0.05,Loja Online,2026-09-07T03:56:44-04:00
+PED-00372,2026-09-07,CLI-0128,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Sul,PR,,39.90,15.00,0.15,Loja Física,2026-09-07T09:58:49-04:00
+PED-00373,2026-09-07,CLI-0041,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,PI,2,1899.90,1450.00,0.12,Loja Online,2026-09-07T15:24:25-04:00
+PED-00374,2026-09-08,CLI-0087,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Sudeste,RJ,3,399.90,260.00,0.08,Loja Online,2026-09-08T04:38:01-04:00
+PED-00375,2026-09-08,CLI-0009,PROD-007,Impressora multifuncional,Eletrônicos,Sudeste,RJ,3,1099.90,790.00,0.08,Loja Online,2026-09-08T05:02:53-04:00
+PED-00376,2026-09-08,CLI-0064,PROD-007,Impressora multifuncional,Eletrônicos,Sul,SC,2,1099.90,790.00,0.40,Loja Online,2026-09-08T08:10:23-04:00
+PED-00377,2026-09-08,CLI-0098,PROD-011,Mouse sem fio,Acessórios,Centro-Oeste,GO,4,79.90,38.00,0.08,Loja Online,2026-09-08T11:23:09-04:00
+PED-00378,2026-09-08,CLI-0147,PROD-006,Monitor de 24 polegadas,Eletrônicos,Nordeste,MA,1,799.90,570.00,0.15,Loja Física,2026-09-08T12:07:04-04:00
+PED-00379,2026-09-08,CLI-0144,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,PB,5,39.90,15.00,0.08,Loja Online,2026-09-08T14:05:10-04:00
+PED-00380,2026-09-08,CLI-0087,PROD-001,Processador de seis núcleos,Hardware,Sudeste,RJ,1,899.90,650.00,0.05,Loja Física,2026-09-08T15:27:51-04:00
+PED-00381,2026-09-08,CLI-0110,PROD-003,Placa-mãe,Hardware,Nordeste,RN,1,649.90,460.00,0.03,Loja Online,2026-09-08T15:57:50-04:00
+PED-00382,2026-09-08,CLI-0052,PROD-010,Câmera de vídeo para computador,Eletrônicos,Centro-Oeste,DF,2,159.90,90.00,0.00,Loja Online,2026-09-08T16:01:17-04:00
+PED-00383,2026-09-08,CLI-0105,PROD-002,Placa de vídeo de 8 GB,Hardware,,AC,2,1899.90,1450.00,0.15,Loja Online,2026-09-08T21:24:59-04:00
+PED-00384,2026-09-09,CLI-0153,PROD-011,Mouse sem fio,Acessórios,Centro-Oeste,DF,,79.90,38.00,0.00,Loja Online,2026-09-09T01:08:27-04:00
+PED-00385,2026-09-09,CLI-0004,PROD-003,Placa-mãe,Hardware,Nordeste,BA,1,649.90,460.00,0.03,Loja Física,2026-09-09T09:51:56-04:00
+PED-00386,2026-09-09,CLI-0059,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Norte,RO,2,399.90,260.00,0.00,Loja Física,2026-09-09T11:04:11-04:00
+PED-00387,2026-09-09,CLI-0073,PROD-009,Caixa de som portátil,Eletrônicos,Sul,SC,1,179.90,105.00,0.15,Loja Física,2026-09-09T16:59:38-04:00
+PED-00388,2026-09-09,CLI-0074,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Norte,RO,4,39.90,15.00,0.08,Loja Online,2026-09-09T22:50:56-04:00
+PED-00389,2026-09-10,CLI-0107,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Sudeste,SP,2,399.90,260.00,0.00,Loja Online,2026-09-10T05:26:27-04:00
+PED-00390,2026-09-10,CLI-0094,PROD-010,Câmera de vídeo para computador,Eletrônicos,Norte,AC,3,159.90,90.00,0.08,Loja Online,2026-09-10T11:21:27-04:00
+PED-00391,2026-09-10,CLI-0077,PROD-010,Câmera de vídeo para computador,Eletrônicos,Centro-Oeste,MT,1,159.90,90.00,0.05,Loja Online,2026-09-10T13:06:01-04:00
+PED-00392,2026-09-10,CLI-0160,PROD-015,Suporte para computador portátil,Acessórios,Norte,RR,1,99.90,48.00,0.05,Loja Online,2026-09-10T14:40:55-04:00
+PED-00393,2026-09-10,CLI-0019,PROD-002,Placa de vídeo de 8 GB,Hardware,Centro-Oeste,MS,2,1899.90,1450.00,0.03,Loja Física,2026-09-10T17:38:34-04:00
+PED-00394,2026-09-10,CLI-0081,PROD-012,Teclado com fio,Acessórios,Nordeste,RN,2,89.90,45.00,0.05,Loja Física,2026-09-10T19:16:06-04:00
+PED-00395,2026-09-10,CLI-0106,PROD-007,Impressora multifuncional,Eletrônicos,Norte,RR,1,1099.90,790.00,0.05,Loja Online,2026-09-10T21:59:44-04:00
+PED-00396,2026-09-11,CLI-0108,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,PI,1,1899.90,1450.00,0.08,Loja Online,2026-09-11T05:53:44-04:00
+PED-00397,2026-09-11,CLI-0019,PROD-004,Memória RAM de 16 GB,Hardware,Centro-Oeste,MS,2,279.90,180.00,0.00,Loja Física,2026-09-11T09:24:22-04:00
+PED-00398,2026-09-11,CLI-0027,PROD-009,Caixa de som portátil,Eletrônicos,Nordeste,PB,1,179.90,105.00,0.40,Loja Online,2026-09-11T11:14:24-04:00
+PED-00399,2026-09-11,CLI-0026,PROD-004,Memória RAM de 16 GB,Hardware,Nordeste,SE,1,279.90,180.00,0.12,Loja Online,2026-09-11T15:19:20-04:00
+PED-00400,2026-09-11,CLI-0046,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,MA,1,39.90,15.00,0.00,Loja Online,2026-09-11T21:56:13-04:00
+PED-00401,2026-09-12,CLI-0069,PROD-011,Mouse sem fio,Acessórios,Centro-Oeste,GO,4,79.90,38.00,0.08,Loja Online,2026-09-12T06:43:59-04:00
+PED-00402,2026-09-12,CLI-0083,PROD-002,Placa de vídeo de 8 GB,Hardware,Centro-Oeste,MS,1,1899.90,1450.00,0.15,Loja Física,2026-09-12T09:50:01-04:00
+PED-00403,2026-09-12,CLI-0140,PROD-012,Teclado com fio,Acessórios,Nordeste,PB,1,89.90,45.00,0.00,Loja Online,2026-09-12T11:13:52-04:00
+PED-00404,2026-09-12,CLI-0067,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,PI,2,129.90,65.00,0.05,Loja Física,2026-09-12T12:19:20-04:00
+PED-00405,2026-09-12,CLI-0101,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,BA,2,99.90,48.00,0.00,Loja Física,2026-09-12T17:53:10-04:00
+PED-00406,2026-09-12,CLI-0084,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,AL,1,1099.90,790.00,0.15,Loja Física,2026-09-12T19:04:58-04:00
+PED-00407,2026-09-13,CLI-0089,PROD-006,Monitor de 24 polegadas,Eletrônicos,Norte,AP,2,799.90,570.00,0.03,Loja Online,2026-09-13T10:53:22-04:00
+PED-00408,2026-09-13,CLI-0113,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Norte,RO,2,39.90,15.00,0.00,Loja Física,2026-09-13T14:23:17-04:00
+PED-00409,2026-09-13,CLI-0060,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,AL,1,99.90,48.00,0.00,Loja Online,2026-09-13T14:36:45-04:00
+PED-00410,2026-09-13,CLI-0119,PROD-010,Câmera de vídeo para computador,Eletrônicos,Nordeste,AL,3,159.90,90.00,1.20,Loja Física,2026-09-13T14:39:17-04:00
+PED-00411,2026-09-13,CLI-0060,PROD-003,Placa-mãe,Hardware,Nordeste,AL,2,649.90,460.00,0.08,Loja Física,2026-09-13T18:32:40-04:00
+PED-00412,2026-09-14,CLI-0103,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,RN,1,1099.90,790.00,0.10,Loja Física,2026-09-14T11:32:35-04:00
+PED-00413,2026-09-14,CLI-0067,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,PI,1,99.90,48.00,0.00,Loja Online,2026-09-14T16:41:55-04:00
+PED-00414,2026-09-14,CLI-0005,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,SE,1,1899.90,1450.00,0.05,Loja Online,2026-09-14T20:19:37-04:00
+PED-00415,2026-09-14,CLI-0092,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Norte,AP,3,399.90,260.00,0.08,Loja Online,2026-09-14T23:12:17-04:00
+PED-00416,2026-09-15,CLI-0001,PROD-008,Roteador sem fio,Eletrônicos,Nordeste,PB,1,249.90,155.00,0.10,Loja Online,2026-09-15T01:41:29-04:00
+PED-00417,2026-09-15,CLI-0145,PROD-015,Suporte para computador portátil,Acessórios,Centro-Oeste,MS,1,99.90,48.00,0.08,Loja Online,2026-09-15T04:38:54-04:00
+PED-00418,2026-09-15,CLI-0157,PROD-003,Placa-mãe,Hardware,Nordeste,AL,3,649.90,460.00,0.08,Loja Física,2026-09-15T11:46:08-04:00
+PED-00419,2026-09-15,CLI-0017,PROD-003,Placa-mãe,Hardware,Nordeste,PI,3,649.90,460.00,0.08,Loja Física,2026-09-15T14:03:10-04:00
+PED-00420,2026-09-15,CLI-0116,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,MA,2,1899.90,1450.00,0.12,Loja Física,2026-09-15T16:52:48-04:00
+PED-00421,2026-09-15,CLI-0033,PROD-011,Mouse sem fio,Acessórios,Norte,TO,2,79.90,38.00,0.10,Loja Física,2026-09-15T17:08:05-04:00
+PED-00422,2026-09-16,CLI-0069,PROD-015,Suporte para computador portátil,Acessórios,Centro-Oeste,GO,1,99.90,48.00,0.12,Loja Física,2026-09-16T15:28:08-04:00
+PED-00423,2026-09-16,CLI-0138,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,BA,4,39.90,15.00,0.10,Loja Online,2026-09-16T19:47:17-04:00
+PED-00424,2026-09-17,CLI-0050,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Nordeste,CE,3,399.90,260.00,0.12,Loja Online,2026-09-17T00:55:14-04:00
+PED-00425,2026-09-17,CLI-0107,PROD-013,Fone de ouvido com microfone,Acessórios,Sudeste,SP,2,129.90,65.00,0.05,Loja Física,2026-09-17T17:06:23-04:00
+PED-00426,2026-09-17,CLI-0082,PROD-015,Suporte para computador portátil,Acessórios,Norte,AC,3,99.90,48.00,0.12,Loja Online,2026-09-17T18:19:10-04:00
+PED-00427,2026-09-17,CLI-0070,PROD-015,Suporte para computador portátil,Acessórios,Nordeste,BA,1,99.90,48.00,0.15,Loja Física,2026-09-17T18:50:59-04:00
+PED-00428,2026-09-17,CLI-0077,PROD-011,Mouse sem fio,Acessórios,Centro-Oeste,MT,2,79.90,38.00,0.05,Loja Online,2026-09-17T19:37:59-04:00
+PED-00429,2026-09-18,CLI-0096,PROD-008,Roteador sem fio,Eletrônicos,Sudeste,SP,1,249.90,155.00,0.12,Loja Online,2026-09-18T01:28:10-04:00
+PED-00430,2026-09-18,CLI-0041,PROD-003,Placa-mãe,Hardware,Nordeste,PI,2,649.90,460.00,0.05,Loja Física,2026-09-18T10:21:37-04:00
+PED-00431,2026-09-18,CLI-0006,PROD-008,Roteador sem fio,Eletrônicos,Sul,SC,1,249.90,155.00,0.12,Loja Física,2026-09-18T13:22:08-04:00
+PED-00432,2026-09-18,CLI-0126,PROD-001,Processador de seis núcleos,Hardware,Nordeste,RN,1,899.90,650.00,0.15,Loja Online,2026-09-18T15:17:13-04:00
+PED-00433,2026-09-18,CLI-0075,PROD-002,Placa de vídeo de 8 GB,Hardware,Centro-Oeste,PB,1,1899.90,1450.00,0.12,Loja Física,2026-09-18T17:33:41-04:00
+PED-00434,2026-09-19,CLI-0059,PROD-015,Suporte para computador portátil,Acessórios,Norte,RO,5,99.90,48.00,0.12,Loja Online,2026-09-19T03:26:18-04:00
+PED-00435,2026-09-19,CLI-0105,PROD-006,Monitor de 24 polegadas,Eletrônicos,Norte,AC,2,799.90,570.00,0.08,Loja Física,2026-09-19T12:49:44-04:00
+PED-00436,2026-09-19,CLI-0109,PROD-004,Memória RAM de 16 GB,Hardware,Centro-Oeste,GO,1,279.90,180.00,0.03,Loja Física,2026-09-19T19:30:53-04:00
+PED-00437,2026-09-20,CLI-0055,PROD-001,Processador de seis núcleos,Hardware,Sudeste,MG,1,899.90,650.00,0.00,Loja Física,2026-09-20T09:13:46-04:00
+PED-00438,2026-09-20,CLI-0042,PROD-003,Placa-mãe,Hardware,Norte,AC,2,649.90,460.00,0.12,Loja Online,2026-09-20T13:42:33-04:00
+PED-00439,2026-09-20,CLI-0148,PROD-002,Placa de vídeo de 8 GB,Hardware,Norte,TO,3,1899.90,1450.00,0.08,Loja Física,2026-09-20T15:46:08-04:00
+PED-00440,2026-09-20,CLI-0135,PROD-001,Processador de seis núcleos,Hardware,Norte,RO,1,899.90,650.00,0.00,Loja Online,2026-09-20T16:58:52-04:00
+PED-00441,2026-09-20,CLI-0143,PROD-007,Impressora multifuncional,Eletrônicos,Norte,RR,3,1099.90,790.00,0.08,Loja Física,2026-09-20T17:04:28-04:00
+PED-00442,2026-09-20,CLI-0043,PROD-010,Câmera de vídeo para computador,Eletrônicos,Nordeste,BA,1,159.90,90.00,0.15,Loja Online,2026-09-20T18:11:26-04:00
+PED-00443,2026-09-20,CLI-0066,PROD-006,Monitor de 24 polegadas,Eletrônicos,Norte,AM,1,799.90,570.00,0.05,Loja Física,2026-09-20T18:16:56-04:00
+PED-00444,2026-09-20,CLI-0038,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Norte,MA,1,399.90,260.00,0.40,Loja Online,2026-09-20T18:47:03-04:00
+PED-00445,2026-09-20,CLI-0062,PROD-010,Câmera de vídeo para computador,Eletrônicos,Nordeste,PI,2,159.90,90.00,0.05,Loja Online,2026-09-20T23:14:36-04:00
+PED-00446,2026-09-20,CLI-0009,PROD-015,Suporte para computador portátil,Acessórios,Sudeste,RJ,3,99.90,48.00,0.08,Loja Online,2026-09-20T23:55:57-04:00
+PED-00447,2026-09-21,CLI-0098,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Centro-Oeste,GO,1,399.90,260.00,0.03,Loja Online,2026-09-21T10:45:38-04:00
+PED-00448,2026-09-21,CLI-0159,PROD-004,Memória RAM de 16 GB,Hardware,Centro-Oeste,DF,1,279.90,180.00,0.00,Loja Física,2026-09-21T13:44:26-04:00
+PED-00449,2026-09-21,CLI-0125,PROD-012,Teclado com fio,Acessórios,Centro-Oeste,MS,5,89.90,45.00,0.08,Loja Online,2026-09-21T23:25:13-04:00
+PED-00450,2026-09-22,CLI-0127,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Nordeste,PB,1,399.90,260.00,0.15,Loja Física,2026-09-22T11:41:16-04:00
+PED-00451,2026-09-22,CLI-0093,PROD-009,Caixa de som portátil,Eletrônicos,Nordeste,SE,2,179.90,105.00,0.05,Loja Online,2026-09-22T15:37:25-04:00
+PED-00452,2026-09-23,CLI-0041,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,PI,2,1899.90,1450.00,0.03,Loja Online,2026-09-23T04:45:52-04:00
+PED-00453,2026-09-23,CLI-0121,PROD-002,Placa de vídeo de 8 GB,Hardware,Sudeste,RJ,2,1899.90,1450.00,0.12,Loja Física,2026-09-23T16:19:42-04:00
+PED-00454,2026-09-23,CLI-0119,PROD-008,Roteador sem fio,Eletrônicos,Nordeste,AL,2,249.90,155.00,0.05,Loja Física,2026-09-23T20:01:01-04:00
+PED-00455,2026-09-23,CLI-0038,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,MA,2,1899.90,1450.00,0.00,Loja Online,2026-09-23T23:16:31-04:00
+PED-00456,2026-09-24,CLI-0016,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Sudeste,MG,1,39.90,15.00,0.08,Loja Online,2026-09-24T02:23:48-04:00
+PED-00457,2026-09-24,CLI-0012,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,PE,2,129.90,65.00,0.03,Loja Física,2026-09-24T10:08:47-04:00
+PED-00458,2026-09-24,CLI-0017,PROD-009,Caixa de som portátil,Eletrônicos,Nordeste,PI,3,179.90,105.00,0.08,Loja Online,2026-09-24T10:45:03-04:00
+PED-00459,2026-09-24,CLI-0013,PROD-006,Monitor de 24 polegadas,Eletrônicos,Norte,AM,1,799.90,570.00,0.10,Loja Física,2026-09-24T14:14:18-04:00
+PED-00460,2026-09-24,CLI-0008,PROD-003,Placa-mãe,Hardware,Centro-Oeste,GO,2,649.90,460.00,0.00,Loja Física,2026-09-24T14:28:24-04:00
+PED-00461,2026-09-24,CLI-0008,PROD-013,Fone de ouvido com microfone,Acessórios,Centro-Oeste,GO,5,129.90,65.00,0.08,Loja Física,2026-09-24T15:30:58-04:00
+PED-00462,2026-09-24,CLI-0119,PROD-013,Fone de ouvido com microfone,Acessórios,Nordeste,AL,2,129.90,65.00,0.12,Loja Online,2026-09-24T21:38:25-04:00
+PED-00463,2026-09-24,CLI-0056,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,PB,1,39.90,15.00,-0.05,Loja Online,2026-09-24T23:40:17-04:00
+PED-00464,2026-09-24,CLI-0082,PROD-008,Roteador sem fio,Eletrônicos,Norte,AC,1,249.90,,0.00,Loja Online,2026-09-24T23:55:45-04:00
+PED-00465,2026-09-25,CLI-0008,PROD-004,Memória RAM de 16 GB,Hardware,Centro-Oeste,GO,1,279.90,180.00,0.05,Loja Online,2026-09-25T00:17:04-04:00
+PED-00466,2026-09-25,CLI-0031,PROD-009,Caixa de som portátil,Eletrônicos,Nordeste,MA,1,179.90,105.00,0.00,Loja Online,2026-09-25T07:26:24-04:00
+PED-00467,2026-09-25,CLI-0066,PROD-015,Suporte para computador portátil,Acessórios,Norte,AM,2,99.90,48.00,0.05,Loja Física,2026-09-25T10:20:38-04:00
+PED-00468,2026-09-25,CLI-0131,PROD-011,Mouse sem fio,Acessórios,Sul,SC,5,79.90,38.00,0.12,Loja Física,2026-09-25T13:18:32-04:00
+PED-00469,2026-09-25,CLI-0079,PROD-008,Roteador sem fio,Eletrônicos,Sul,PR,1,249.90,155.00,0.05,Loja Online,2026-09-25T13:57:02-04:00
+PED-00470,2026-09-26,CLI-0068,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,PB,3,1899.90,1450.00,0.08,Loja Online,2026-09-26T08:09:37-04:00
+PED-00471,2026-09-26,CLI-0115,PROD-013,Fone de ouvido com microfone,Acessórios,Centro-Oeste,MT,1,129.90,65.00,0.03,Loja Online,2026-09-26T08:58:17-04:00
+PED-00472,2026-09-26,CLI-0043,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,BA,3,1899.90,1450.00,0.15,Loja Física,2026-09-26T13:36:03-04:00
+PED-00473,2026-09-26,CLI-0010,PROD-001,Processador de seis núcleos,Hardware,Centro-Oeste,DF,2,899.90,650.00,0.00,Loja Online,2026-09-26T20:02:54-04:00
+PED-00474,2026-09-27,CLI-0120,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,PB,5,39.90,15.00,0.08,Loja Online,2026-09-27T01:13:53-04:00
+PED-00475,2026-09-27,CLI-0022,PROD-002,Placa de vídeo de 8 GB,Hardware,Centro-Oeste,MS,1,1899.90,1450.00,0.00,Loja Física,2026-09-27T09:27:10-04:00
+PED-00476,2026-09-27,CLI-0147,PROD-006,Monitor de 24 polegadas,Eletrônicos,Nordeste,MA,1,799.90,570.00,0.00,Loja Física,2026-09-27T11:20:44-04:00
+PED-00477,2026-09-27,CLI-0159,PROD-012,Teclado com fio,Acessórios,Centro-Oeste,DF,2,89.90,45.00,0.03,Loja Online,2026-09-27T11:23:08-04:00
+PED-00478,2026-09-27,CLI-0083,PROD-008,Roteador sem fio,Eletrônicos,Centro-Oeste,MS,1,249.90,155.00,0.08,Loja Física,2026-09-27T11:37:35-04:00
+PED-00479,2026-09-27,CLI-0134,PROD-009,Caixa de som portátil,Eletrônicos,Sudeste,MG,1,179.90,105.00,0.05,Loja Física,2026-09-27T14:59:46-04:00
+PED-00480,2026-09-27,CLI-0054,PROD-011,Mouse sem fio,Acessórios,Sul,RS,2,79.90,38.00,0.05,Loja Física,2026-09-27T15:34:35-04:00
+PED-00481,2026-09-27,CLI-0068,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,PB,2,1899.90,1450.00,0.00,Loja Online,2026-09-27T18:12:11-04:00
+PED-00482,2026-09-27,CLI-0046,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Nordeste,MA,5,39.90,15.00,0.10,Loja Física,2026-09-27T19:30:11-04:00
+PED-00483,2026-09-27,CLI-0031,PROD-009,Caixa de som portátil,Eletrônicos,Nordeste,MA,1,179.90,105.00,0.00,Loja Online,2026-09-27T21:13:57-04:00
+PED-00484,2026-09-28,CLI-0003,PROD-008,Roteador sem fio,Eletrônicos,Nordeste,PI,1,249.90,155.00,0.00,Loja Online,2026-09-28T12:23:20-04:00
+PED-00485,2026-09-28,CLI-0050,PROD-006,Monitor de 24 polegadas,Eletrônicos,Nordeste,CE,1,799.90,570.00,0.10,Loja Física,2026-09-28T14:58:31-04:00
+PED-00486,2026-09-28,CLI-0060,PROD-007,Impressora multifuncional,Eletrônicos,Nordeste,AL,1,1099.90,790.00,0.05,Loja Física,2026-09-28T15:28:12-04:00
+PED-00487,2026-09-28,CLI-0146,PROD-006,Monitor de 24 polegadas,Eletrônicos,Norte,RO,1,799.90,570.00,0.08,Loja Online,2026-09-28T16:09:43-04:00
+PED-00488,2026-09-28,CLI-0100,PROD-012,Teclado com fio,Acessórios,Nordeste,PE,2,89.90,45.00,0.00,Loja Online,2026-09-28T22:05:17-04:00
+PED-00489,2026-09-29,CLI-0100,PROD-002,Placa de vídeo de 8 GB,Hardware,Nordeste,PE,1,1899.90,1450.00,0.00,Loja Online,2026-09-29T03:15:44-04:00
+PED-00490,2026-09-29,CLI-0058,PROD-005,Unidade de armazenamento de 1 TB,Hardware,Nordeste,SE,1,399.90,260.00,0.12,Loja Online,2026-09-29T10:31:23-04:00
+PED-00491,2026-09-29,CLI-0058,PROD-001,Processador de seis núcleos,Hardware,Nordeste,SE,2,899.90,650.00,0.10,Loja Física,2026-09-29T14:17:39-04:00
+PED-00492,2026-09-29,CLI-0019,PROD-006,Monitor de 24 polegadas,Eletrônicos,Centro-Oeste,MS,1,799.90,570.00,0.10,Loja Física,2026-09-29T14:47:44-04:00
+PED-00493,2026-09-29,CLI-0089,PROD-010,Câmera de vídeo para computador,Eletrônicos,Norte,AP,,159.90,90.00,0.08,Loja Física,2026-09-29T14:58:42-04:00
+PED-00494,2026-09-29,CLI-0007,PROD-012,Teclado com fio,Acessórios,Nordeste,PI,1,89.90,45.00,0.05,Loja Física,2026-09-29T15:59:25-04:00
+PED-00495,2026-09-29,CLI-0031,PROD-012,Teclado com fio,Acessórios,Nordeste,MA,1,89.90,45.00,0.15,Loja Física,2026-09-29T19:51:17-04:00
+PED-00496,2026-09-29,CLI-0133,PROD-003,Placa-mãe,Hardware,Centro-Oeste,MS,1,649.90,460.00,0.10,Loja Online,2026-09-29T21:57:51-04:00
+PED-00497,2026-09-30,CLI-0095,PROD-003,Placa-mãe,Hardware,Sudeste,MG,2,649.90,460.00,0.15,Loja Online,2026-09-30T04:37:13-04:00
+PED-00498,2026-09-30,CLI-0030,PROD-002,Placa de vídeo de 8 GB,Hardware,Sudeste,RJ,2,1899.90,1450.00,0.15,Loja Física,2026-09-30T10:22:25-04:00
+PED-00499,2026-09-30,CLI-0052,PROD-014,Cabo de vídeo de 2 metros,Acessórios,Centro-Oeste,DF,5,39.90,15.00,0.08,Loja Física,2026-09-30T12:28:29-04:00
+PED-00500,2026-09-30,CLI-0039,PROD-010,Câmera de vídeo para computador,Eletrônicos,Norte,TO,2,159.90,90.00,0.12,Loja Física,2026-09-30T14:59:54-04:00

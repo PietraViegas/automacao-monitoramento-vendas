@@ -1,0 +1,438 @@
+{
+  "name": "Monitoramento de Alertas de Negócio",
+  "nodes": [
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "language": "pythonNative",
+        "pythonCode": "dados = _item[\"json\"]\n\nalertas = []\n\n# Converte os campos para número\nlucro = float(dados[\"lucro\"])\nmargem_pct = float(dados[\"margem_pct\"])\ndesconto_pct = float(dados[\"desconto_pct\"])\n\n\n# =========================\n# 1. VENDA COM PREJUÍZO\n# =========================\n\nif lucro < 0:\n    alertas.append(\"Venda com prejuízo\")\n\n\n# =========================\n# 2. MARGEM BAIXA\n# =========================\n\nif margem_pct >= 0 and margem_pct < 0.10:\n    alertas.append(\"Margem de lucro abaixo de 10%\")\n\n\n# =========================\n# 3. DESCONTO ELEVADO\n# =========================\n\nif desconto_pct >= 0.30:\n    alertas.append(\"Desconto igual ou superior a 30%\")\n\n\n# =========================\n# RESULTADO\n# =========================\n\ndados[\"tem_alerta\"] = len(alertas) > 0\ndados[\"alertas\"] = alertas\n\nreturn _item"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        448,
+        -160
+      ],
+      "id": "9a50dc39-9f08-4031-a262-ada1ba944650",
+      "name": "Aplicar Regras de Negócio"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "2d98cc28-ae20-4152-8d5b-b055140d0589",
+              "leftValue": "={{ $json.tem_alerta }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        672,
+        -160
+      ],
+      "id": "634f981e-9107-4974-8855-b917788eefca",
+      "name": "Possui Alerta?"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "e99e2d99-1955-4722-9fb5-2085b4222dad",
+              "name": "alertado_em",
+              "value": "={{ $now.toFormat(\"yyyy-MM-dd'T'HH:mm:ssZZ\") }}",
+              "type": "string"
+            },
+            {
+              "id": "c3237540-34e5-401a-a0f9-fe28c047be0a",
+              "name": "alertas",
+              "value": "={{ $json.alertas.join(\" | \") }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "include": "except",
+        "excludeFields": "tem_alerta",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        880,
+        -256
+      ],
+      "id": "116dce9a-1ca2-4946-b192-da96a13d7ca6",
+      "name": "Preparar Alerta de Negócio"
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU",
+          "mode": "list",
+          "cachedResultName": "Projeto_Automacao_Vendas",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1692496107,
+          "mode": "list",
+          "cachedResultName": "alertas_negocio.csv",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU/edit#gid=1692496107"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "id_pedido"
+          ],
+          "schema": [
+            {
+              "id": "id_pedido",
+              "displayName": "id_pedido",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "data_venda",
+              "displayName": "data_venda",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "id_cliente",
+              "displayName": "id_cliente",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "id_produto",
+              "displayName": "id_produto",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "nome_produto",
+              "displayName": "nome_produto",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "categoria",
+              "displayName": "categoria",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "regiao",
+              "displayName": "regiao",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "estado",
+              "displayName": "estado",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "quantidade",
+              "displayName": "quantidade",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "preco_unitario",
+              "displayName": "preco_unitario",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "custo_unitario",
+              "displayName": "custo_unitario",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "desconto_pct",
+              "displayName": "desconto_pct",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "canal_venda",
+              "displayName": "canal_venda",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "criado_em",
+              "displayName": "criado_em",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "receita_bruta",
+              "displayName": "receita_bruta",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "valor_desconto",
+              "displayName": "valor_desconto",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "receita_liquida",
+              "displayName": "receita_liquida",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "custo_total",
+              "displayName": "custo_total",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "lucro",
+              "displayName": "lucro",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "margem_pct",
+              "displayName": "margem_pct",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "processado_em",
+              "displayName": "processado_em",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "alertas",
+              "displayName": "alertas",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "alertado_em",
+              "displayName": "alertado_em",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1088,
+        -256
+      ],
+      "id": "d3ca44e7-3518-46ca-8de9-3a6611f2d9bc",
+      "name": "Salvar Alertas de Negócio",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "uhpqKcjr0EmHtA9r",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "documentId": {
+          "__rl": true,
+          "value": "1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU",
+          "mode": "list",
+          "cachedResultName": "Projeto_Automacao_Vendas",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1904601050,
+          "mode": "list",
+          "cachedResultName": "vendas_processadas",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU/edit#gid=1904601050"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTrigger",
+      "typeVersion": 1,
+      "position": [
+        224,
+        -160
+      ],
+      "id": "f50efe45-acfd-474e-b8bf-ac8c2673e62a",
+      "name": "Detectar Novas Vendas Processadas",
+      "credentials": {
+        "googleSheetsTriggerOAuth2Api": {
+          "id": "7K5NpX8jUcCynlM6",
+          "name": "Google Sheets Trigger account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Aplicar Regras de Negócio": {
+      "main": [
+        [
+          {
+            "node": "Possui Alerta?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Possui Alerta?": {
+      "main": [
+        [
+          {
+            "node": "Preparar Alerta de Negócio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Preparar Alerta de Negócio": {
+      "main": [
+        [
+          {
+            "node": "Salvar Alertas de Negócio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Detectar Novas Vendas Processadas": {
+      "main": [
+        [
+          {
+            "node": "Aplicar Regras de Negócio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "b4ac64cb-3821-4325-bac4-5d61bd7d9e93",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1501ce255e3ef2702ba332282c2221b9148d820b8e43715605dadad8e7783015"
+  },
+  "nodeGroups": [],
+  "id": "hwAJi00FAkZLE2Tx",
+  "tags": []
+}

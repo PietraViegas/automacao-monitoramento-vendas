@@ -1,0 +1,14 @@
+# Credenciais do Google Cloud
+google_cloud_ID/
+client_secret*.json
+
+# Arquivos de ambiente
+.env
+.env.*
+
+# Arquivos locais
+__pycache__/
+*.pyc
+.DS_Store
+
+

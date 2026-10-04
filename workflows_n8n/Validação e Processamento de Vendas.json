@@ -1,0 +1,678 @@
+{
+  "name": "Validação e Processamento de Vendas",
+  "nodes": [
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "language": "pythonNative",
+        "pythonCode": "# =========================\n# CONFIGURAÇÕES / DOMÍNIOS\n# =========================\n\ncampos_obrigatorios = [\n    \"id_pedido\",\n    \"data_venda\",\n    \"id_cliente\",\n    \"id_produto\",\n    \"nome_produto\",\n    \"categoria\",\n    \"regiao\",\n    \"estado\",\n    \"quantidade\",\n    \"preco_unitario\",\n    \"custo_unitario\",\n    \"desconto_pct\",\n    \"canal_venda\",\n    \"criado_em\",\n]\n\ncanais_validos = [\n    \"Loja Física\",\n    \"Loja Online\",\n]\n\n# Catálogo controlado\ncatalogo = {\n    \"PROD-001\": {\n        \"nome\": \"Processador de seis núcleos\",\n        \"categoria\": \"Hardware\",\n    },\n    \"PROD-002\": {\n        \"nome\": \"Placa de vídeo de 8 GB\",\n        \"categoria\": \"Hardware\",\n    },\n    \"PROD-003\": {\n        \"nome\": \"Placa-mãe\",\n        \"categoria\": \"Hardware\",\n    },\n    \"PROD-004\": {\n        \"nome\": \"Memória RAM de 16 GB\",\n        \"categoria\": \"Hardware\",\n    },\n    \"PROD-005\": {\n        \"nome\": \"Unidade de armazenamento de 1 TB\",\n        \"categoria\": \"Hardware\",\n    },\n\n    \"PROD-006\": {\n        \"nome\": \"Monitor de 24 polegadas\",\n        \"categoria\": \"Eletrônicos\",\n    },\n    \"PROD-007\": {\n        \"nome\": \"Impressora multifuncional\",\n        \"categoria\": \"Eletrônicos\",\n    },\n    \"PROD-008\": {\n        \"nome\": \"Roteador sem fio\",\n        \"categoria\": \"Eletrônicos\",\n    },\n    \"PROD-009\": {\n        \"nome\": \"Caixa de som portátil\",\n        \"categoria\": \"Eletrônicos\",\n    },\n    \"PROD-010\": {\n        \"nome\": \"Câmera de vídeo para computador\",\n        \"categoria\": \"Eletrônicos\",\n    },\n\n    \"PROD-011\": {\n        \"nome\": \"Mouse sem fio\",\n        \"categoria\": \"Acessórios\",\n    },\n    \"PROD-012\": {\n        \"nome\": \"Teclado com fio\",\n        \"categoria\": \"Acessórios\",\n    },\n    \"PROD-013\": {\n        \"nome\": \"Fone de ouvido com microfone\",\n        \"categoria\": \"Acessórios\",\n    },\n    \"PROD-014\": {\n        \"nome\": \"Cabo de vídeo de 2 metros\",\n        \"categoria\": \"Acessórios\",\n    },\n    \"PROD-015\": {\n        \"nome\": \"Suporte para computador portátil\",\n        \"categoria\": \"Acessórios\",\n    },\n}\n\nregioes_por_estado = {\n    # Norte\n    \"AC\": \"Norte\",\n    \"AP\": \"Norte\",\n    \"AM\": \"Norte\",\n    \"PA\": \"Norte\",\n    \"RO\": \"Norte\",\n    \"RR\": \"Norte\",\n    \"TO\": \"Norte\",\n\n    # Nordeste\n    \"AL\": \"Nordeste\",\n    \"BA\": \"Nordeste\",\n    \"CE\": \"Nordeste\",\n    \"MA\": \"Nordeste\",\n    \"PB\": \"Nordeste\",\n    \"PE\": \"Nordeste\",\n    \"PI\": \"Nordeste\",\n    \"RN\": \"Nordeste\",\n    \"SE\": \"Nordeste\",\n\n    # Centro-Oeste\n    \"DF\": \"Centro-Oeste\",\n    \"GO\": \"Centro-Oeste\",\n    \"MT\": \"Centro-Oeste\",\n    \"MS\": \"Centro-Oeste\",\n\n    # Sudeste\n    \"ES\": \"Sudeste\",\n    \"MG\": \"Sudeste\",\n    \"RJ\": \"Sudeste\",\n    \"SP\": \"Sudeste\",\n\n    # Sul\n    \"PR\": \"Sul\",\n    \"RS\": \"Sul\",\n    \"SC\": \"Sul\",\n}\n\n\n# =========================\n# REGISTRO RECEBIDO DO N8N\n# =========================\n\ndados = _item[\"json\"]\n\nerros = []\n\n\n# =========================\n# FUNÇÕES AUXILIARES\n# =========================\n\ndef esta_vazio(valor):\n    \"\"\"\n    Considera vazio:\n    - None\n    - string vazia\n    - string só com espaços\n    \"\"\"\n    return valor is None or (\n        isinstance(valor, str) and valor.strip() == \"\"\n    )\n\n\ndef converter_numero(valor):\n    \"\"\"\n    Tenta converter o valor para float.\n    Retorna None se não for possível.\n    \"\"\"\n    if esta_vazio(valor):\n        return None\n\n    try:\n        if isinstance(valor, str):\n            valor = valor.replace(\",\", \".\")\n\n        return float(valor)\n\n    except (ValueError, TypeError):\n        return None\n\n\n# =========================\n# 1. COMPLETUDE\n# =========================\n\nfor campo in campos_obrigatorios:\n    if campo not in dados or esta_vazio(dados.get(campo)):\n        erros.append(\n            f\"Campo obrigatório não preenchido: {campo}\"\n        )\n\n\n# =========================\n# 2. TIPOS / FORMATOS\n# =========================\n\nquantidade = converter_numero(dados.get(\"quantidade\"))\npreco_unitario = converter_numero(dados.get(\"preco_unitario\"))\ncusto_unitario = converter_numero(dados.get(\"custo_unitario\"))\ndesconto_pct = converter_numero(dados.get(\"desconto_pct\"))\n\n\n# Quantidade\nif not esta_vazio(dados.get(\"quantidade\")):\n\n    if quantidade is None:\n        erros.append(\n            \"Quantidade deve ser um valor numérico\"\n        )\n\n    elif not quantidade.is_integer():\n        erros.append(\n            \"Quantidade deve ser um número inteiro\"\n        )\n\n\n# Preço unitário\nif not esta_vazio(dados.get(\"preco_unitario\")):\n\n    if preco_unitario is None:\n        erros.append(\n            \"Preço unitário deve ser um valor numérico\"\n        )\n\n\n# Custo unitário\nif not esta_vazio(dados.get(\"custo_unitario\")):\n\n    if custo_unitario is None:\n        erros.append(\n            \"Custo unitário deve ser um valor numérico\"\n        )\n\n\n# Desconto\nif not esta_vazio(dados.get(\"desconto_pct\")):\n\n    if desconto_pct is None:\n        erros.append(\n            \"Desconto deve ser um valor numérico\"\n        )\n\n\n# =========================\n# 3. INTERVALOS\n# =========================\n\nif quantidade is not None:\n    if quantidade <= 0:\n        erros.append(\n            \"Quantidade deve ser maior que zero\"\n        )\n\n\nif preco_unitario is not None:\n    if preco_unitario <= 0:\n        erros.append(\n            \"Preço unitário deve ser maior que zero\"\n        )\n\n\nif custo_unitario is not None:\n    if custo_unitario < 0:\n        erros.append(\n            \"Custo unitário não pode ser negativo\"\n        )\n\n\nif desconto_pct is not None:\n    if desconto_pct < 0 or desconto_pct > 1:\n        erros.append(\n            \"Desconto deve estar entre 0 e 1\"\n        )\n\n\n# =========================\n# 4. CANAL DE VENDA\n# =========================\n\ncanal = dados.get(\"canal_venda\")\n\nif not esta_vazio(canal):\n\n    if canal not in canais_validos:\n        erros.append(\n            f\"Canal de venda inválido: {canal}\"\n        )\n\n\n# =========================\n# 5. ESTADO X REGIÃO\n# =========================\n\nestado = dados.get(\"estado\")\nregiao = dados.get(\"regiao\")\n\nif not esta_vazio(estado):\n\n    estado = str(estado).strip().upper()\n\n    if estado not in regioes_por_estado:\n\n        erros.append(\n            f\"Estado inválido ou não reconhecido: {estado}\"\n        )\n\n    elif not esta_vazio(regiao):\n\n        regiao_esperada = regioes_por_estado[estado]\n\n        if regiao != regiao_esperada:\n            erros.append(\n                f\"Região incompatível com o estado: \"\n                f\"{estado} pertence à região {regiao_esperada}\"\n            )\n\n\n# =========================\n# 6. PRODUTO / CATEGORIA\n# =========================\n\nid_produto = dados.get(\"id_produto\")\nnome_produto = dados.get(\"nome_produto\")\ncategoria = dados.get(\"categoria\")\n\nif not esta_vazio(id_produto):\n\n    if id_produto not in catalogo:\n\n        erros.append(\n            f\"ID de produto não encontrado no catálogo: {id_produto}\"\n        )\n\n    else:\n\n        produto_esperado = catalogo[id_produto]\n\n        nome_esperado = produto_esperado[\"nome\"]\n        categoria_esperada = produto_esperado[\"categoria\"]\n\n        # Nome do produto\n        if not esta_vazio(nome_produto):\n\n            if nome_produto != nome_esperado:\n                erros.append(\n                    f\"Nome do produto incompatível com o ID \"\n                    f\"{id_produto}. Esperado: {nome_esperado}\"\n                )\n\n        # Categoria\n        if not esta_vazio(categoria):\n\n            if categoria != categoria_esperada:\n                erros.append(\n                    f\"Categoria incompatível com o produto \"\n                    f\"{id_produto}. Esperada: {categoria_esperada}\"\n                )\n\n\n# =========================\n# 7. RESULTADO FINAL\n# =========================\n\ndados[\"registro_valido\"] = len(erros) == 0\ndados[\"motivos_erro\"] = erros\n\nreturn _item"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        384,
+        -80
+      ],
+      "id": "66333f49-8fcf-4e6b-b7cf-f6358a6c3ea8",
+      "name": "Validar qualidade dos dados"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "f308091b-bb6e-4938-a86f-1cb772dfc15b",
+              "leftValue": "={{ $json.registro_valido }}",
+              "rightValue": "={{ true }}",
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        608,
+        -80
+      ],
+      "id": "c284edb1-efa8-4516-b6fc-3777855bb594",
+      "name": "Registro válido?"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "language": "pythonNative",
+        "pythonCode": "dados = _item[\"json\"]\n\nquantidade = float(dados[\"quantidade\"])\npreco_unitario = float(dados[\"preco_unitario\"])\ncusto_unitario = float(dados[\"custo_unitario\"])\ndesconto_pct = float(dados[\"desconto_pct\"])\n\nreceita_bruta = quantidade * preco_unitario\n\nvalor_desconto = receita_bruta * desconto_pct\n\nreceita_liquida = receita_bruta - valor_desconto\n\ncusto_total = quantidade * custo_unitario\n\nlucro = receita_liquida - custo_total\n\nif receita_liquida != 0:\n    margem_pct = lucro / receita_liquida\nelse:\n    margem_pct = 0\n\ndados[\"receita_bruta\"] = round(receita_bruta, 2)\ndados[\"valor_desconto\"] = round(valor_desconto, 2)\ndados[\"receita_liquida\"] = round(receita_liquida, 2)\ndados[\"custo_total\"] = round(custo_total, 2)\ndados[\"lucro\"] = round(lucro, 2)\ndados[\"margem_pct\"] = round(margem_pct, 4)\n\n\ndados.pop(\"registro_valido\", None)\ndados.pop(\"motivos_erro\", None)\n\nreturn _item"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        832,
+        -176
+      ],
+      "id": "9cf209bc-775b-4f26-a2fd-c0f47f581a28",
+      "name": "Calcular métricas da venda"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "96503129-7250-4351-89c5-75b44e67ceae",
+              "name": "processado_em",
+              "value": "={{ $now.toFormat(\"yyyy-MM-dd'T'HH:mm:ssZZ\") }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        1056,
+        -176
+      ],
+      "id": "a601764d-e940-4b57-b924-027eef9e0329",
+      "name": "Adicionar Data de Processamento"
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU",
+          "mode": "list",
+          "cachedResultName": "Projeto_Automacao_Vendas",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1904601050,
+          "mode": "list",
+          "cachedResultName": "vendas_processadas.csv",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU/edit#gid=1904601050"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "id_pedido"
+          ],
+          "schema": [
+            {
+              "id": "id_pedido",
+              "displayName": "id_pedido",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "data_venda",
+              "displayName": "data_venda",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "id_cliente",
+              "displayName": "id_cliente",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "id_produto",
+              "displayName": "id_produto",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "nome_produto",
+              "displayName": "nome_produto",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "categoria",
+              "displayName": "categoria",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "regiao",
+              "displayName": "regiao",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "estado",
+              "displayName": "estado",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "quantidade",
+              "displayName": "quantidade",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "preco_unitario",
+              "displayName": "preco_unitario",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "custo_unitario",
+              "displayName": "custo_unitario",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "desconto_pct",
+              "displayName": "desconto_pct",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "canal_venda",
+              "displayName": "canal_venda",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "criado_em",
+              "displayName": "criado_em",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "receita_bruta",
+              "displayName": "receita_bruta",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "valor_desconto",
+              "displayName": "valor_desconto",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "receita_liquida",
+              "displayName": "receita_liquida",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "custo_total",
+              "displayName": "custo_total",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "lucro",
+              "displayName": "lucro",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "margem_pct",
+              "displayName": "margem_pct",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "processado_em",
+              "displayName": "processado_em",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1280,
+        -176
+      ],
+      "id": "31d50048-9b3a-4eb8-97a4-f8b6cf6206b0",
+      "name": "Salvar Vendas Processadas",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "uhpqKcjr0EmHtA9r",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5efa42ba-3f19-4e72-88a6-53accbba339f",
+              "name": "motivos_erro",
+              "value": "={{ $json.motivos_erro.join(\" | \") }}",
+              "type": "string"
+            },
+            {
+              "id": "1f4e92c5-2d15-4f20-9af6-728e4e2113bb",
+              "name": "rejeitado_em",
+              "value": "={{ $now.toFormat(\"yyyy-MM-dd'T'HH:mm:ssZZ\") }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "include": "except",
+        "excludeFields": "registro_valido, motivos_erro",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        832,
+        16
+      ],
+      "id": "75d74aee-1c30-4198-bfd7-4a31c2d48b2a",
+      "name": "Preparar Registro Rejeitado"
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU",
+          "mode": "list",
+          "cachedResultName": "Projeto_Automacao_Vendas",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 170239127,
+          "mode": "list",
+          "cachedResultName": "registros_rejeitados.csv",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU/edit#gid=170239127"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "id_pedido"
+          ],
+          "schema": [
+            {
+              "id": "id_pedido",
+              "displayName": "id_pedido",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "data_venda",
+              "displayName": "data_venda",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "id_cliente",
+              "displayName": "id_cliente",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "id_produto",
+              "displayName": "id_produto",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "nome_produto",
+              "displayName": "nome_produto",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "categoria",
+              "displayName": "categoria",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "regiao",
+              "displayName": "regiao",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "estado",
+              "displayName": "estado",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "quantidade",
+              "displayName": "quantidade",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "preco_unitario",
+              "displayName": "preco_unitario",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "custo_unitario",
+              "displayName": "custo_unitario",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "desconto_pct",
+              "displayName": "desconto_pct",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "canal_venda",
+              "displayName": "canal_venda",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "criado_em",
+              "displayName": "criado_em",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "motivos_erro",
+              "displayName": "motivos_erro",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "rejeitado_em",
+              "displayName": "rejeitado_em",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1056,
+        16
+      ],
+      "id": "0d8f04f4-b201-4a6c-994c-4d54f3e2b632",
+      "name": "Salvar Registros Rejeitados",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "uhpqKcjr0EmHtA9r",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "documentId": {
+          "__rl": true,
+          "value": "1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU",
+          "mode": "list",
+          "cachedResultName": "Projeto_Automacao_Vendas",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 172529625,
+          "mode": "list",
+          "cachedResultName": "vendas_brutas",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mj1srdwK2_r-awKHMFtbyC9RC7KIq_3BbnIhkLCfsKU/edit#gid=172529625"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTrigger",
+      "typeVersion": 1,
+      "position": [
+        96,
+        -80
+      ],
+      "id": "7581d86e-61e1-4201-9100-fa3be9bd1c13",
+      "name": "Detectar Novas Vendas Brutas",
+      "credentials": {
+        "googleSheetsTriggerOAuth2Api": {
+          "id": "7K5NpX8jUcCynlM6",
+          "name": "Google Sheets Trigger account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Validar qualidade dos dados": {
+      "main": [
+        [
+          {
+            "node": "Registro válido?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Registro válido?": {
+      "main": [
+        [
+          {
+            "node": "Calcular métricas da venda",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Preparar Registro Rejeitado",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calcular métricas da venda": {
+      "main": [
+        [
+          {
+            "node": "Adicionar Data de Processamento",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Adicionar Data de Processamento": {
+      "main": [
+        [
+          {
+            "node": "Salvar Vendas Processadas",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Preparar Registro Rejeitado": {
+      "main": [
+        [
+          {
+            "node": "Salvar Registros Rejeitados",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Detectar Novas Vendas Brutas": {
+      "main": [
+        [
+          {
+            "node": "Validar qualidade dos dados",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "7e176456-1288-40b8-9acb-c2b9c0597994",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1501ce255e3ef2702ba332282c2221b9148d820b8e43715605dadad8e7783015"
+  },
+  "nodeGroups": [],
+  "id": "Y8cSj6UdMNqP0OHZ",
+  "tags": []
+}
