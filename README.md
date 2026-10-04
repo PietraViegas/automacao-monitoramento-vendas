@@ -388,8 +388,8 @@ Praticar e demonstrar conhecimentos em automação de processos, integração en
 
 ## Contato
 
-<!-- Troque pelos seus links -->
-- LinkedIn: [seu-perfil](https://www.linkedin.com/in/pietra-viegas-581544309)
-- GitHub: [seu-usuario](https://github.com/PietraViegas)
+
+- LinkedIn: [Pietra Viegas](https://www.linkedin.com/in/pietra-viegas-581544309)
+- GitHub: [Pietra Viegas](https://github.com/PietraViegas)
 - E-mail: eipiviegas@gmail.com
 
